@@ -1,0 +1,12 @@
+# pyproject.toml
+
+[tool.poetry]
+name = "redis-bike-co"
+version = "0.0.1"
+description = "Redis Bike Company Demo Application"
+authors = ["Simon Prickett <simon@redis.com>", "Brian Sam-Bodden <bsb@redis.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+redis = "^4.5.5"
+flask = "^2.3.2"
