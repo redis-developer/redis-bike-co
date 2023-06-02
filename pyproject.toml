@@ -10,3 +10,4 @@ authors = ["Simon Prickett <simon@redis.com>", "Brian Sam-Bodden <bsb@redis.com>
 python = "^3.9"
 redis = "^4.5.5"
 flask = "^2.3.2"
+python-dotenv = "^1.0.0"
