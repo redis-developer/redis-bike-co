@@ -1,2 +1,3 @@
-# redis-bike-co
-Redis Bike Company Example Application
+# Redis Bike Company Example Application
+
+TODO README!
