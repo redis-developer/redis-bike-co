@@ -167,3 +167,6 @@ cython_debug/
 
 # Redis Data folder.
 redisdata/
+
+# Visual Studio Code
+.vscode/
