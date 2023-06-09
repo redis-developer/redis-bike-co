@@ -14,23 +14,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 5
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 12
         }
       ]
     },
@@ -52,19 +52,19 @@
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 7
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 16
         }
       ]
     },
@@ -82,23 +82,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 10
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 23
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 13
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 6
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 3
         }
       ]
     },
@@ -128,23 +128,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 12
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 19
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 3
         }
       ]
     },
@@ -196,15 +196,15 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 5
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 17
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 6
         },
         {
           "storecode": "MU",
@@ -212,7 +212,7 @@
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 4
         }
       ]
     },
@@ -230,23 +230,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 8
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 27
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 1
         }
       ]
     },
@@ -264,23 +264,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 1
         }
       ]
     },
@@ -298,23 +298,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 34
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 16
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 15
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 12
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 8
         }
       ]
     },
@@ -332,23 +332,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 6
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 7
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 7
         }
       ]
     },
@@ -366,23 +366,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 12
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 3
         }
       ]
     },
@@ -400,23 +400,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 2
         }
       ]
     },
@@ -434,23 +434,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 8
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 12
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 1
         }
       ]
     },
@@ -468,23 +468,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 6
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 5
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 2
         }
       ]
     },
@@ -502,19 +502,19 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "KA",
@@ -570,23 +570,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 6
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 12
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 8
         }
       ]
     },
@@ -604,23 +604,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 5
         }
       ]
     },
@@ -638,23 +638,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 5
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 3
         }
       ]
     },
@@ -676,7 +676,7 @@
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
@@ -684,7 +684,7 @@
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KA",
@@ -706,23 +706,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 10
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 7
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 5
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 3
         }
       ]
     },
@@ -740,23 +740,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 5
         }
       ]
     },
@@ -774,15 +774,15 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "MU",
@@ -790,7 +790,7 @@
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 1
         }
       ]
     },
@@ -808,23 +808,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 5
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 2
         }
       ]
     },
@@ -842,11 +842,11 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "BE",
@@ -854,11 +854,11 @@
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 3
         }
       ]
     },
@@ -876,23 +876,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 5
         }
       ]
     },
@@ -910,23 +910,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 1
         }
       ]
     },
@@ -952,7 +952,7 @@
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "MU",
@@ -960,7 +960,7 @@
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 1
         }
       ]
     },
@@ -978,23 +978,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 12
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 7
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 14
         }
       ]
     },
@@ -1012,7 +1012,7 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KO",
@@ -1020,15 +1020,15 @@
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 5
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 7
         }
       ]
     },
@@ -1046,23 +1046,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 5
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 6
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 7
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 8
         }
       ]
     },
@@ -1088,15 +1088,15 @@
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 7
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 3
         }
       ]
     },
@@ -1114,23 +1114,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 6
         }
       ]
     },
@@ -1152,19 +1152,19 @@
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 6
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 8
         }
       ]
     },
@@ -1182,23 +1182,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 1
         }
       ]
     },
@@ -1216,23 +1216,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 8
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 9
         }
       ]
     },
@@ -1250,19 +1250,19 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 16
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 8
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 12
         },
         {
           "storecode": "KA",
@@ -1284,23 +1284,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 7
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 16
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 5
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 5
         }
       ]
     },
@@ -1318,23 +1318,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 6
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 5
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 1
         }
       ]
     },
@@ -1352,23 +1352,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 6
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 7
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 8
         }
       ]
     },
@@ -1386,19 +1386,19 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 8
         },
         {
           "storecode": "KA",
@@ -1454,23 +1454,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 5
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 1
         }
       ]
     },
@@ -1488,7 +1488,7 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KO",
@@ -1496,15 +1496,15 @@
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 8
         }
       ]
     },
@@ -1522,19 +1522,19 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 17
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KA",
@@ -1556,23 +1556,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 6
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 1
         }
       ]
     },
@@ -1590,23 +1590,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 6
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 7
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 8
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 1
         }
       ]
     },
@@ -1624,23 +1624,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 3
         }
       ]
     },
@@ -1666,15 +1666,15 @@
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 5
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 6
         }
       ]
     },
@@ -1692,23 +1692,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 14
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 6
         }
       ]
     },
@@ -1726,23 +1726,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 7
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 5
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 1
         }
       ]
     },
@@ -1760,23 +1760,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 5
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 6
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 7
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 1
         }
       ]
     },
@@ -1794,7 +1794,7 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KO",
@@ -1828,23 +1828,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 15
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 12
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 7
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 5
         }
       ]
     },
@@ -1862,23 +1862,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 8
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 2
         }
       ]
     },
@@ -1896,15 +1896,15 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "MU",
@@ -1912,7 +1912,7 @@
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 7
         }
       ]
     },
@@ -1930,23 +1930,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 12
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 6
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 7
         }
       ]
     },
@@ -1998,23 +1998,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 8
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 9
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 4
         }
       ]
     },
@@ -2036,19 +2036,19 @@
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 2
         }
       ]
     },
@@ -2066,23 +2066,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 5
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 8
         }
       ]
     },
@@ -2100,23 +2100,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 7
         }
       ]
     },
@@ -2134,23 +2134,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 12
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 2
         }
       ]
     },
@@ -2168,23 +2168,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 12
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 6
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 7
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 18
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 19
         }
       ]
     },
@@ -2202,23 +2202,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 1
         }
       ]
     },
@@ -2236,23 +2236,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 3
         }
       ]
     },
@@ -2278,7 +2278,7 @@
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "MU",
@@ -2286,7 +2286,7 @@
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 1
         }
       ]
     },
@@ -2304,19 +2304,19 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 5
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KA",
@@ -2346,15 +2346,15 @@
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 6
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 1
         }
       ]
     },
@@ -2372,23 +2372,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 4
         }
       ]
     },
@@ -2406,23 +2406,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 12
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 6
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 3
         }
       ]
     },
@@ -2440,23 +2440,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 12
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 1
         }
       ]
     },
@@ -2508,23 +2508,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 12
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 9
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 5
         }
       ]
     },
@@ -2542,23 +2542,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 7
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 6
         }
       ]
     },
@@ -2576,11 +2576,11 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "BE",
@@ -2588,7 +2588,7 @@
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KA",
@@ -2610,23 +2610,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 2
         }
       ]
     },
@@ -2656,23 +2656,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 5
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 6
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 1
         }
       ]
     },
@@ -2690,11 +2690,11 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "BE",
@@ -2702,11 +2702,11 @@
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 5
         }
       ]
     },
@@ -2724,19 +2724,19 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KA",
@@ -2758,23 +2758,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 12
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 5
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 6
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 4
         }
       ]
     },
@@ -2792,23 +2792,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 2
         }
       ]
     },
@@ -2834,15 +2834,15 @@
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 1
         }
       ]
     },
@@ -2860,23 +2860,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 12
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 22
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 12
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 9
         }
       ]
     },
@@ -2894,15 +2894,15 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "MU",
@@ -2910,7 +2910,7 @@
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 4
         }
       ]
     },
@@ -2928,23 +2928,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 14
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 8
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 1
         }
       ]
     },
@@ -2962,23 +2962,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 5
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 6
         }
       ]
     },
@@ -3030,23 +3030,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 6
         }
       ]
     },
@@ -3064,7 +3064,7 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KO",
@@ -3072,15 +3072,15 @@
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 4
         }
       ]
     },
@@ -3098,23 +3098,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 2
         }
       ]
     },
@@ -3132,23 +3132,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 12
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 5
         }
       ]
     },
@@ -3166,23 +3166,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 5
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 12
         }
       ]
     },
@@ -3200,7 +3200,7 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KO",
@@ -3208,7 +3208,7 @@
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "MU",
@@ -3216,7 +3216,7 @@
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 2
         }
       ]
     },
@@ -3234,23 +3234,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 2
         }
       ]
     },
@@ -3268,23 +3268,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 1
         }
       ]
     },
@@ -3302,23 +3302,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 2
         }
       ]
     },
@@ -3336,23 +3336,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 1
         }
       ]
     },
@@ -3370,23 +3370,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 3
         }
       ]
     },
@@ -3404,7 +3404,7 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KO",
@@ -3412,15 +3412,15 @@
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 7
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 1
         }
       ]
     },
@@ -3438,23 +3438,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 2
         }
       ]
     },
@@ -3472,23 +3472,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 4
         }
       ]
     },
@@ -3506,23 +3506,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 6
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 7
         }
       ]
     },
@@ -3540,23 +3540,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 2
         }
       ]
     },
@@ -3574,23 +3574,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 3
         }
       ]
     },
@@ -3608,11 +3608,11 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 5
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "BE",
@@ -3620,11 +3620,11 @@
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 2
         }
       ]
     },
@@ -3646,19 +3646,19 @@
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 6
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 12
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 2
         }
       ]
     },
@@ -3676,23 +3676,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 9
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 12
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 8
         }
       ]
     },
@@ -3710,23 +3710,23 @@
       "inventory": [
         {
           "storecode": "CH",
-          "instock": 0
+          "instock": 3
         },
         {
           "storecode": "KO",
-          "instock": 0
+          "instock": 2
         },
         {
           "storecode": "BE",
-          "instock": 0
+          "instock": 1
         },
         {
           "storecode": "MU",
-          "instock": 0
+          "instock": 4
         },
         {
           "storecode": "KA",
-          "instock": 0
+          "instock": 5
         }
       ]
     }
