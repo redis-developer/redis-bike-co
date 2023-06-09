@@ -58,7 +58,7 @@ print(f"TODO Loaded {stores_loaded} stores into Redis.")
 print("Verifying data...")
 
 try:
-    print("TODO verify something")
+    print("TODO verify some things...")
 except AssertionError as e:
     # Something went wrong :(
     print("Data verification checks failed:")
