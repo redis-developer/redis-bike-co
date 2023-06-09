@@ -1,0 +1,63 @@
+{
+  "data": [
+    { 
+      "storecode": "CH",
+      "storename": "Chennai",
+      "address": {
+        "street": "Arcot Road",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "pin": "600026",
+        "country": "India"
+      },
+      "position": "80.2057207,13.0511065"
+    },
+    { 
+      "storecode": "KO",
+      "storename": "Kochi",
+      "address": {
+        "street": "Mulamkuzhi Beach Road",
+        "city": "Kochi",
+        "state": "Kerala",
+        "pin": "682002",
+        "country": "India"
+      },
+      "position": "76.2415241,9.9436983"
+    },
+    { 
+      "storecode": "BE",
+      "storename": "Bengaluru",
+      "address": {
+        "street": "Palace Road",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "pin": "560001",
+        "country": "India"
+      },
+      "position": "77.5120754,12.9918699"
+    },
+    { 
+      "storecode": "MU",
+      "storename": "Mumbai",
+      "address": {
+        "street": "Trident Road",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pin": "400098"
+      },
+      "position": "72.8305678,19.0666028"
+    },
+    { 
+      "storecode": "KA",
+      "storename": "Kanpur",
+      "address": {
+        "street": "Second Street",
+        "city": "Kanpur",
+        "state": "Uttar Pradesh",
+        "pin": "208003",
+        "country": "India"
+      },
+      "position": "80.3060951,26.4497247"
+    }
+  ]
+}
