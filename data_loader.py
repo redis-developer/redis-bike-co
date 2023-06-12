@@ -2,7 +2,6 @@
 
 from dotenv import load_dotenv
 
-import argparse
 import json
 import io
 import os
@@ -19,8 +18,6 @@ STORE_KEY_BASE = f"{REDIS_KEY_BASE}:store"
 BIKE_INDEX_NAME = "idx:bikes"
 STORE_INDEX_NAME = "idx:stores"
 EXIT_CODE_ERROR = 1
-
-# TODO set up arg_parser to get the data file(s).
 
 # Connect to Redis and reset to a known state.
 print(f"Connecting to Redis.")
