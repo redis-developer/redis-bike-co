@@ -112,7 +112,29 @@
         "material": "carbon",
         "weight": 13.1
       },
-      "description": "This is a mid-travel trail slayer that is a fantastic daily driver or one bike quiver. The Shimano Claris 8-speed groupset gives plenty of gear range to tackle hills and there's room for mudguards and a rack too.  This is the bike for the rider who wants trail manners with low fuss ownership."
+      "description": "This is a mid-travel trail slayer that is a fantastic daily driver or one bike quiver. The Shimano Claris 8-speed groupset gives plenty of gear range to tackle hills and there's room for mudguards and a rack too.  This is the bike for the rider who wants trail manners with low fuss ownership.",
+      "inventory": [
+        {
+          "storecode": "CH",
+          "instock": 3
+        },
+        {
+          "storecode": "KO",
+          "instock": 6
+        },
+        {
+          "storecode": "BE",
+          "instock": 2
+        },
+        {
+          "storecode": "MU",
+          "instock": 1
+        },
+        {
+          "storecode": "KA",
+          "instock": 1
+        }
+      ]
     },
     {
       "stockcode": "RBC00005",
@@ -2640,7 +2662,29 @@
         "material": "aluminium",
         "weight": 8.9
       },
-      "description": "This bike is an entry-level kids mountain bike that is a good choice if your MTB enthusiast is just taking to the trails and wants good suspension and easy gearing, without the cost of some more expensive models. The Shimano Claris 8-speed groupset gives plenty of gear range to tackle hills and there's room for mudguards and a rack too.  All bikes are great in their own way, but this bike will be one of the best you've ridden."
+      "description": "This bike is an entry-level kids mountain bike that is a good choice if your MTB enthusiast is just taking to the trails and wants good suspension and easy gearing, without the cost of some more expensive models. The Shimano Claris 8-speed groupset gives plenty of gear range to tackle hills and there's room for mudguards and a rack too.  All bikes are great in their own way, but this bike will be one of the best you've ridden.",
+      "inventory": [
+        {
+          "storecode": "CH",
+          "instock": 4
+        },
+        {
+          "storecode": "KO",
+          "instock": 3
+        },
+        {
+          "storecode": "BE",
+          "instock": 1
+        },
+        {
+          "storecode": "MU",
+          "instock": 0
+        },
+        {
+          "storecode": "KA",
+          "instock": 2
+        }
+      ]
     },
     {
       "stockcode": "RBC00080",
