@@ -87,7 +87,7 @@ print(f"Loading bike data.")
 bikes_loaded = 0
 
 try:
-    bikes_file = io.open("data/bike_data.json")
+    bikes_file = io.open("data/bike_data.json", encoding = "utf-8")
     all_bikes = json.load(bikes_file)
     bikes_file.close()
 
@@ -112,7 +112,7 @@ print(f"Loading store data.")
 stores_loaded = 0
 
 try:
-    stores_file = io.open("data/store_data.json")
+    stores_file = io.open("data/store_data.json", encoding = "utf-8")
     all_stores = json.load(stores_file)
     bikes_file.close()
 
