@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 
 import argparse
 import json
+import io
 import os
 import redis
 
@@ -17,6 +18,7 @@ BIKE_KEY_BASE = f"{REDIS_KEY_BASE}:bike"
 STORE_KEY_BASE = f"{REDIS_KEY_BASE}:store"
 BIKE_INDEX_NAME = "idx:bikes"
 STORE_INDEX_NAME = "idx:stores"
+EXIT_CODE_ERROR = 1
 
 # TODO set up arg_parser to get the data file(s).
 
@@ -32,28 +34,68 @@ for k in redis_client.scan_iter(match = f"{REDIS_KEY_BASE}:*"):
 pipeline.execute()
 
 print("Dropping any existing search indices.")
+
 try:
     redis_client.ft(BIKE_INDEX_NAME).dropindex(delete_documents = False)
-    # TODO drop any other indices...
+    redis_client.ft(STORE_INDEX_NAME).dropindex(delete_documents = False)
 except:
     # Dropping an index that doesn't exist throws an exception 
-    # but isn't an error in this case.
+    # but isn't an error in this case - we just want to start
+    # from a known point.
     pass
 
 print("TODO Create search index for bikes.")
 print("TODO Create search index for stores.")
 
-print(f"TODO Loading bike data.")
+print(f"Loading bike data.")
 bikes_loaded = 0
-# TODO open the JSON file and load the bikes...
 
-print(f"TODO Loaded {bikes_loaded} bikes into Redis.")
+try:
+    bikes_file = io.open("data/bike_data.json")
+    all_bikes = json.load(bikes_file)
+    bikes_file.close()
 
-print(f"TODO Loading store data.")
+    # Use a pipeline to load all the bike documents into Redis.
+    pipeline = redis_client.pipeline(transaction = False)
+
+    for bike in all_bikes["data"]:
+        bike_key = f"{BIKE_KEY_BASE}:{bike['stockcode'].lower()}"
+        pipeline.json().set(bike_key, "$", bike)
+        bikes_loaded += 1
+        print(f"{bike_key} - {bike['brand']} {bike['model']}")
+
+    pipeline.execute()
+except Exception as e:
+    print("Failed to load bikes file:")
+    print(e)
+    os._exit(EXIT_CODE_ERROR)
+
+print(f"Loaded {bikes_loaded} bikes into Redis.")
+
+print(f"Loading store data.")
 stores_loaded = 0
-# TODO open the JSON file and load the stores...
 
-print(f"TODO Loaded {stores_loaded} stores into Redis.")
+try:
+    stores_file = io.open("data/store_data.json")
+    all_stores = json.load(stores_file)
+    bikes_file.close()
+
+    # Use a pipeline to load all the store documents into Redis.
+    pipeline = redis_client.pipeline(transaction = False)
+
+    for store in all_stores["data"]:
+        store_key = f"{STORE_KEY_BASE}:{store['storecode'].lower()}"
+        pipeline.json().set(store_key, "$", store)
+        stores_loaded += 1
+        print(f"{store_key} - {store['storename']}")
+
+    pipeline.execute()
+except Exception as e:
+    print("Failed to load stores file:")
+    print(e)
+    os._exit(EXIT_CODE_ERROR)
+
+print(f"Loaded {stores_loaded} stores into Redis.")
 
 print("Verifying data...")
 
@@ -64,7 +106,7 @@ except AssertionError as e:
     print("Data verification checks failed:")
     print(e)
     redis_client.quit()
-    os._exit(1)
+    os._exit(EXIT_CODE_ERROR)
 
 # All done!    
 print("Data verification checks completed OK.")
