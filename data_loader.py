@@ -1,6 +1,8 @@
 # Redis Bike Company Demo Application: Data Loader Script
 
 from dotenv import load_dotenv
+from redis.commands.search.indexDefinition import IndexDefinition, IndexType
+from redis.commands.search.field import TextField, TagField, NumericField, GeoField
 
 import json
 import io
@@ -34,15 +36,37 @@ print("Dropping any existing search indices.")
 
 try:
     redis_client.ft(BIKE_INDEX_NAME).dropindex(delete_documents = False)
-    redis_client.ft(STORE_INDEX_NAME).dropindex(delete_documents = False)
 except:
     # Dropping an index that doesn't exist throws an exception 
     # but isn't an error in this case - we just want to start
     # from a known point.
     pass
 
+try:
+    redis_client.ft(STORE_INDEX_NAME).dropindex(delete_documents = False)
+except:
+    pass
+
+
 print("TODO Create search index for bikes.")
-print("TODO Create search index for stores.")
+
+print("Creating store search index.")
+
+redis_client.ft(STORE_INDEX_NAME).create_index(
+    [
+        TagField("$.storecode", as_name = "storecode"),
+        TagField("$.storename", as_name = "storename"),
+        TagField("$.address.city", as_name = "city"), 
+        TagField("$.address.state", as_name = "state"),
+        TagField("$.address.pin", as_name = "pin"),
+        TagField("$.address.country", as_name = "country"),
+        GeoField("$.position", as_name = "position")
+    ],
+    definition = IndexDefinition(
+        index_type = IndexType.JSON,
+        prefix = [ f"{STORE_INDEX_NAME}:" ]
+    )
+)
 
 print(f"Loading bike data.")
 bikes_loaded = 0
