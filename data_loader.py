@@ -47,7 +47,6 @@ try:
 except:
     pass
 
-
 print("Creating search index for bikes.")
 redis_client.ft(BIKE_INDEX_NAME).create_index(
     [
@@ -57,12 +56,13 @@ redis_client.ft(BIKE_INDEX_NAME).create_index(
         TagField("$.type", as_name = "type", sortable = True),
         TextField("$.description", as_name = "description"),
         TagField("$.specs.material", as_name = "material", sortable = True),
-        NumericField("$.specs.weight", as_name = "weight", sortable = True)
-        # TODO inventory fields
+        NumericField("$.specs.weight", as_name = "weight", sortable = True),
+        TagField("$.inventory[*].storecode", as_name = "store"),
+        NumericField("$.inventory[*].instock", as_name = "instock", sortable = True)
     ],
     definition = IndexDefinition(
         index_type = IndexType.JSON,
-        prefix = [ f"{BIKE_INDEX_NAME}:" ]
+        prefix = [ f"{BIKE_KEY_BASE}:" ]
     )
 )
 
@@ -79,7 +79,7 @@ redis_client.ft(STORE_INDEX_NAME).create_index(
     ],
     definition = IndexDefinition(
         index_type = IndexType.JSON,
-        prefix = [ f"{STORE_INDEX_NAME}:" ]
+        prefix = [ f"{STORE_KEY_BASE}:" ]
     )
 )
 
