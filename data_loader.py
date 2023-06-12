@@ -48,10 +48,25 @@ except:
     pass
 
 
-print("TODO Create search index for bikes.")
+print("Creating search index for bikes.")
+redis_client.ft(BIKE_INDEX_NAME).create_index(
+    [
+        TagField("$.stockcode", as_name = "stockcode", sortable = True),
+        TagField("$.model", as_name = "model", sortable = True),
+        TagField("$.brand", as_name = "brand", sortable = True),
+        TagField("$.type", as_name = "type", sortable = True),
+        TextField("$.description", as_name = "description"),
+        TagField("$.specs.material", as_name = "material", sortable = True),
+        NumericField("$.specs.weight", as_name = "weight", sortable = True)
+        # TODO inventory fields
+    ],
+    definition = IndexDefinition(
+        index_type = IndexType.JSON,
+        prefix = [ f"{BIKE_INDEX_NAME}:" ]
+    )
+)
 
 print("Creating store search index.")
-
 redis_client.ft(STORE_INDEX_NAME).create_index(
     [
         TagField("$.storecode", as_name = "storecode"),
