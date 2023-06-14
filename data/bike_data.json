@@ -5,7 +5,7 @@
       "model": "Deimos",
       "brand": "Ergonom",
       "price": 184950,
-      "type": "Enduro bikes",
+      "type": "Enduro Bikes",
       "specs": {
         "material": "alloy",
         "weight": 14.0
@@ -73,7 +73,7 @@
       "model": "Kirk",
       "brand": "Bold bicycles",
       "price": 24999,
-      "type": "Kids bikes",
+      "type": "Kids Bikes",
       "specs": {
         "material": "alloy",
         "weight": 7.8
@@ -107,7 +107,7 @@
       "model": "Phoebe",
       "brand": "Nord",
       "price": 203475,
-      "type": "Mountain bikes",
+      "type": "Mountain Bikes",
       "specs": {
         "material": "carbon",
         "weight": 13.1
@@ -141,7 +141,7 @@
       "model": "Telesto",
       "brand": "BikeShind",
       "price": 230000,
-      "type": "Enduro bikes",
+      "type": "Enduro Bikes",
       "specs": {
         "material": "carbon",
         "weight": 16.3
@@ -175,7 +175,7 @@
       "model": "Jupiter",
       "brand": "Breakout",
       "price": 37485,
-      "type": "Kids bikes",
+      "type": "Kids Bikes",
       "specs": {
         "material": "full-carbon",
         "weight": 9.1
@@ -209,7 +209,7 @@
       "model": "Varuna",
       "brand": "Breakout",
       "price": 137821,
-      "type": "Kids bikes",
+      "type": "Kids Bikes",
       "specs": {
         "material": "alloy",
         "weight": 11.3
@@ -277,7 +277,7 @@
       "model": "Quaoar",
       "brand": "nHill",
       "price": 66650,
-      "type": "Mountain bikes",
+      "type": "Mountain Bikes",
       "specs": {
         "material": "aluminium",
         "weight": 7.9
@@ -379,7 +379,7 @@
       "model": "Janeway",
       "brand": "Tots",
       "price": 145675,
-      "type": "Enduro bikes",
+      "type": "Enduro Bikes",
       "specs": {
         "material": "alloy",
         "weight": 14.7
@@ -413,7 +413,7 @@
       "model": "Ariel",
       "brand": "Bold bicycles",
       "price": 202490,
-      "type": "Mountain bikes",
+      "type": "Mountain Bikes",
       "specs": {
         "material": "full-carbon",
         "weight": 14.3
@@ -515,7 +515,7 @@
       "model": "Proteus",
       "brand": "Ergonom",
       "price": 210316,
-      "type": "Mountain bikes",
+      "type": "Mountain Bikes",
       "specs": {
         "material": "carbon",
         "weight": 13.9
@@ -583,7 +583,7 @@
       "model": "Dione",
       "brand": "Bold bicycles",
       "price": 228526,
-      "type": "Enduro bikes",
+      "type": "Enduro Bikes",
       "specs": {
         "material": "full-carbon",
         "weight": 7.1
@@ -617,7 +617,7 @@
       "model": "Janeway",
       "brand": "ScramBikes",
       "price": 18613,
-      "type": "Kids bikes",
+      "type": "Kids Bikes",
       "specs": {
         "material": "alloy",
         "weight": 11.2
@@ -651,7 +651,7 @@
       "model": "Phoebe",
       "brand": "Nord",
       "price": 162439,
-      "type": "Mountain bikes",
+      "type": "Mountain Bikes",
       "specs": {
         "material": "alloy",
         "weight": 15.9
@@ -787,7 +787,7 @@
       "model": "Miranda",
       "brand": "Eva",
       "price": 23789,
-      "type": "Kids bikes",
+      "type": "Kids Bikes",
       "specs": {
         "material": "carbon",
         "weight": 10.5
@@ -821,7 +821,7 @@
       "model": "Umbriel",
       "brand": "nHill",
       "price": 36052,
-      "type": "Kids bikes",
+      "type": "Kids Bikes",
       "specs": {
         "material": "full-carbon",
         "weight": 8.1
@@ -855,7 +855,7 @@
       "model": "Nereid",
       "brand": "Peaknetic",
       "price": 74814,
-      "type": "Mountain bikes",
+      "type": "Mountain Bikes",
       "specs": {
         "material": "alloy",
         "weight": 8.3
@@ -991,7 +991,7 @@
       "model": "Mimas",
       "brand": "Bold bicycles",
       "price": 17066,
-      "type": "Kids bikes",
+      "type": "Kids Bikes",
       "specs": {
         "material": "aluminium",
         "weight": 8.7
@@ -1195,7 +1195,7 @@
       "model": "Jupiter",
       "brand": "Eva",
       "price": 86350,
-      "type": "Mountain bikes",
+      "type": "Mountain Bikes",
       "specs": {
         "material": "alloy",
         "weight": 8.3
@@ -1399,7 +1399,7 @@
       "model": "Tethys",
       "brand": "Velorim",
       "price": 176110,
-      "type": "Enduro bikes",
+      "type": "Enduro Bikes",
       "specs": {
         "material": "carbon",
         "weight": 9.7
@@ -1433,7 +1433,7 @@
       "model": "Janeway",
       "brand": "Bicyk",
       "price": 55137,
-      "type": "Enduro bikes",
+      "type": "Enduro Bikes",
       "specs": {
         "material": "aluminium",
         "weight": 10.0
@@ -1501,7 +1501,7 @@
       "model": "Polydeuces",
       "brand": "Tots",
       "price": 93830,
-      "type": "Mountain bikes",
+      "type": "Mountain Bikes",
       "specs": {
         "material": "alloy",
         "weight": 11.1
@@ -1535,7 +1535,7 @@
       "model": "Rhea",
       "brand": "Eva",
       "price": 139881,
-      "type": "Mountain bikes",
+      "type": "Mountain Bikes",
       "specs": {
         "material": "aluminium",
         "weight": 16.1
@@ -1569,7 +1569,7 @@
       "model": "Haumea",
       "brand": "Nord",
       "price": 155286,
-      "type": "Mountain bikes",
+      "type": "Mountain Bikes",
       "specs": {
         "material": "aluminium",
         "weight": 11.1
@@ -1603,7 +1603,7 @@
       "model": "Picard",
       "brand": "Pedal pals",
       "price": 167197,
-      "type": "Enduro bikes",
+      "type": "Enduro Bikes",
       "specs": {
         "material": "aluminium",
         "weight": 16.6
@@ -1705,7 +1705,7 @@
       "model": "Uranus",
       "brand": "Breakout",
       "price": 19924,
-      "type": "Kids bikes",
+      "type": "Kids Bikes",
       "specs": {
         "material": "full-carbon",
         "weight": 11.2
@@ -1807,7 +1807,7 @@
       "model": "Europa",
       "brand": "Tots",
       "price": 83844,
-      "type": "Mountain bikes",
+      "type": "Mountain Bikes",
       "specs": {
         "material": "alloy",
         "weight": 13.8
@@ -1875,7 +1875,7 @@
       "model": "Vanth",
       "brand": "nHill",
       "price": 17547,
-      "type": "Kids bikes",
+      "type": "Kids Bikes",
       "specs": {
         "material": "full-carbon",
         "weight": 14.6
@@ -1943,7 +1943,7 @@
       "model": "Quaoar",
       "brand": "Peaknetic",
       "price": 7764,
-      "type": "Kids bikes",
+      "type": "Kids Bikes",
       "specs": {
         "material": "aluminium",
         "weight": 9.0
@@ -2045,7 +2045,7 @@
       "model": "Titan",
       "brand": "nHill",
       "price": 16343,
-      "type": "Kids bikes",
+      "type": "Kids Bikes",
       "specs": {
         "material": "carbon",
         "weight": 9.5
@@ -2079,7 +2079,7 @@
       "model": "Orcus",
       "brand": "BikeShind",
       "price": 224732,
-      "type": "Enduro bikes",
+      "type": "Enduro Bikes",
       "specs": {
         "material": "aluminium",
         "weight": 11.2
@@ -2147,7 +2147,7 @@
       "model": "Pluto",
       "brand": "7th Generation",
       "price": 191615,
-      "type": "Mountain bikes",
+      "type": "Mountain Bikes",
       "specs": {
         "material": "full-carbon",
         "weight": 7.6
@@ -2181,7 +2181,7 @@
       "model": "Charon",
       "brand": "Classic wheels",
       "price": 151844,
-      "type": "Enduro bikes",
+      "type": "Enduro Bikes",
       "specs": {
         "material": "alloy",
         "weight": 9.4
@@ -2215,7 +2215,7 @@
       "model": "Phoebe",
       "brand": "Tots",
       "price": 223327,
-      "type": "Mountain bikes",
+      "type": "Mountain Bikes",
       "specs": {
         "material": "full-carbon",
         "weight": 14.5
@@ -2317,7 +2317,7 @@
       "model": "Hiiaka",
       "brand": "Peaknetic",
       "price": 153895,
-      "type": "Enduro bikes",
+      "type": "Enduro Bikes",
       "specs": {
         "material": "aluminium",
         "weight": 9.2
@@ -2487,7 +2487,7 @@
       "model": "Iapetus",
       "brand": "BikeShind",
       "price": 87236,
-      "type": "Mountain bikes",
+      "type": "Mountain Bikes",
       "specs": {
         "material": "aluminium",
         "weight": 7.3
@@ -2623,7 +2623,7 @@
       "model": "Iapetus",
       "brand": "ScramBikes",
       "price": 223002,
-      "type": "Enduro bikes",
+      "type": "Enduro Bikes",
       "specs": {
         "material": "full-carbon",
         "weight": 11.8
@@ -2691,7 +2691,7 @@
       "model": "Falcon",
       "brand": "Breakout",
       "price": 168045,
-      "type": "Mountain bikes",
+      "type": "Mountain Bikes",
       "specs": {
         "material": "aluminium",
         "weight": 9.0
@@ -2725,7 +2725,7 @@
       "model": "Phobos",
       "brand": "Bold bicycles",
       "price": 161959,
-      "type": "Mountain bikes",
+      "type": "Mountain Bikes",
       "specs": {
         "material": "alloy",
         "weight": 14.1
@@ -2759,7 +2759,7 @@
       "model": "Jupiter",
       "brand": "Peaknetic",
       "price": 119039,
-      "type": "Mountain bikes",
+      "type": "Mountain Bikes",
       "specs": {
         "material": "alloy",
         "weight": 8.2
@@ -2793,7 +2793,7 @@
       "model": "Vesta",
       "brand": "Peaknetic",
       "price": 17204,
-      "type": "Kids bikes",
+      "type": "Kids Bikes",
       "specs": {
         "material": "aluminium",
         "weight": 8.2
@@ -2827,7 +2827,7 @@
       "model": "Millenium-falcon",
       "brand": "Bicyk",
       "price": 15959,
-      "type": "Kids bikes",
+      "type": "Kids Bikes",
       "specs": {
         "material": "aluminium",
         "weight": 8.3
@@ -2895,7 +2895,7 @@
       "model": "Iapetus",
       "brand": "Bicyk",
       "price": 221950,
-      "type": "Enduro bikes",
+      "type": "Enduro Bikes",
       "specs": {
         "material": "full-carbon",
         "weight": 8.6
@@ -2929,7 +2929,7 @@
       "model": "Ncc1702",
       "brand": "Ergonom",
       "price": 159085,
-      "type": "Enduro bikes",
+      "type": "Enduro Bikes",
       "specs": {
         "material": "aluminium",
         "weight": 9.4
@@ -3031,7 +3031,7 @@
       "model": "Jupiter",
       "brand": "Classic wheels",
       "price": 181693,
-      "type": "Enduro bikes",
+      "type": "Enduro Bikes",
       "specs": {
         "material": "full-carbon",
         "weight": 11.4
@@ -3065,7 +3065,7 @@
       "model": "Deimos",
       "brand": "Bicyk",
       "price": 22595,
-      "type": "Kids bikes",
+      "type": "Kids Bikes",
       "specs": {
         "material": "aluminium",
         "weight": 15.1
@@ -3099,7 +3099,7 @@
       "model": "Eris",
       "brand": "nHill",
       "price": 178865,
-      "type": "Enduro bikes",
+      "type": "Enduro Bikes",
       "specs": {
         "material": "full-carbon",
         "weight": 13.6
@@ -3133,7 +3133,7 @@
       "model": "Titan",
       "brand": "Peaknetic",
       "price": 8359,
-      "type": "Kids bikes",
+      "type": "Kids Bikes",
       "specs": {
         "material": "aluminium",
         "weight": 8.7
@@ -3167,7 +3167,7 @@
       "model": "Vesta",
       "brand": "Bicyk",
       "price": 185144,
-      "type": "Mountain bikes",
+      "type": "Mountain Bikes",
       "specs": {
         "material": "full-carbon",
         "weight": 9.6
@@ -3201,7 +3201,7 @@
       "model": "Mimas",
       "brand": "Eva",
       "price": 177094,
-      "type": "Mountain bikes",
+      "type": "Mountain Bikes",
       "specs": {
         "material": "alloy",
         "weight": 13.8
@@ -3235,7 +3235,7 @@
       "model": "Proteus",
       "brand": "nHill",
       "price": 171679,
-      "type": "Enduro bikes",
+      "type": "Enduro Bikes",
       "specs": {
         "material": "alloy",
         "weight": 16.8
@@ -3269,7 +3269,7 @@
       "model": "Triton",
       "brand": "Bicyk",
       "price": 154234,
-      "type": "Mountain bikes",
+      "type": "Mountain Bikes",
       "specs": {
         "material": "aluminium",
         "weight": 9.1
@@ -3303,7 +3303,7 @@
       "model": "Ganymede",
       "brand": "Tots",
       "price": 9439,
-      "type": "Kids bikes",
+      "type": "Kids Bikes",
       "specs": {
         "material": "aluminium",
         "weight": 12.0
@@ -3405,7 +3405,7 @@
       "model": "Jigger",
       "brand": "Velorim",
       "price": 22242,
-      "type": "Kids bikes",
+      "type": "Kids Bikes",
       "specs": {
         "material": "aluminium",
         "weight": 10.0
