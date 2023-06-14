@@ -243,7 +243,7 @@
       "model": "Polydeuces",
       "brand": "7th Generation",
       "price": 52350,
-      "type": "Road bikes",
+      "type": "Road Bikes",
       "specs": {
         "material": "full-carbon",
         "weight": 11.4
@@ -311,7 +311,7 @@
       "model": "Salacia",
       "brand": "Bold bicycles",
       "price": 74299,
-      "type": "Commuter bikes",
+      "type": "Commuter Bikes",
       "specs": {
         "material": "aluminium",
         "weight": 16.6
@@ -345,7 +345,7 @@
       "model": "Weywot",
       "brand": "BikeShind",
       "price": 7850,
-      "type": "Kids mountain bikes",
+      "type": "Kids Mountain Bikes",
       "specs": {
         "material": "alloy",
         "weight": 13.8
@@ -447,7 +447,7 @@
       "model": "Miranda",
       "brand": "Breakout",
       "price": 22279,
-      "type": "Kids mountain bikes",
+      "type": "Kids Mountain Bikes",
       "specs": {
         "material": "carbon",
         "weight": 12.3
@@ -481,7 +481,7 @@
       "model": "Hygiea",
       "brand": "Bicyk",
       "price": 201355,
-      "type": "Road bikes",
+      "type": "Road Bikes",
       "specs": {
         "material": "full-carbon",
         "weight": 7.0
@@ -549,7 +549,7 @@
       "model": "Weywot",
       "brand": "BikeShind",
       "price": 32490,
-      "type": "Kids mountain bikes",
+      "type": "Kids Mountain Bikes",
       "specs": {
         "material": "alloy",
         "weight": 7.2
@@ -685,7 +685,7 @@
       "model": "Sol",
       "brand": "Velorim",
       "price": 177112,
-      "type": "Road bikes",
+      "type": "Road Bikes",
       "specs": {
         "material": "aluminium",
         "weight": 15.8
@@ -719,7 +719,7 @@
       "model": "Quaoar",
       "brand": "Peaknetic",
       "price": 34577,
-      "type": "Kids mountain bikes",
+      "type": "Kids Mountain Bikes",
       "specs": {
         "material": "alloy",
         "weight": 11.8
@@ -753,7 +753,7 @@
       "model": "Saturn",
       "brand": "nHill",
       "price": 55435,
-      "type": "Road bikes",
+      "type": "Road Bikes",
       "specs": {
         "material": "aluminium",
         "weight": 13.3
@@ -889,7 +889,7 @@
       "model": "Salacia",
       "brand": "Tots",
       "price": 141533,
-      "type": "Commuter bikes",
+      "type": "Commuter Bikes",
       "specs": {
         "material": "aluminium",
         "weight": 9.9
@@ -923,7 +923,7 @@
       "model": "Enterprise",
       "brand": "Bold bicycles",
       "price": 227103,
-      "type": "Road bikes",
+      "type": "Road Bikes",
       "specs": {
         "material": "full-carbon",
         "weight": 13.0
@@ -957,7 +957,7 @@
       "model": "Mimas",
       "brand": "nHill",
       "price": 22329,
-      "type": "Kids mountain bikes",
+      "type": "Kids Mountain Bikes",
       "specs": {
         "material": "carbon",
         "weight": 7.4
@@ -1025,7 +1025,7 @@
       "model": "Scorpion",
       "brand": "Bold bicycles",
       "price": 94659,
-      "type": "Commuter bikes",
+      "type": "Commuter Bikes",
       "specs": {
         "material": "alloy",
         "weight": 11.6
@@ -1059,7 +1059,7 @@
       "model": "Telesto",
       "brand": "ScramBikes",
       "price": 84156,
-      "type": "Road bikes",
+      "type": "Road Bikes",
       "specs": {
         "material": "aluminium",
         "weight": 13.4
@@ -1093,7 +1093,7 @@
       "model": "Telesto",
       "brand": "nHill",
       "price": 36565,
-      "type": "Kids mountain bikes",
+      "type": "Kids Mountain Bikes",
       "specs": {
         "material": "full-carbon",
         "weight": 12.0
@@ -1127,7 +1127,7 @@
       "model": "Callisto",
       "brand": "7th Generation",
       "price": 146490,
-      "type": "Road bikes",
+      "type": "Road Bikes",
       "specs": {
         "material": "aluminium",
         "weight": 12.1
@@ -1161,7 +1161,7 @@
       "model": "Ncc1702",
       "brand": "nHill",
       "price": 7471,
-      "type": "Kids mountain bikes",
+      "type": "Kids Mountain Bikes",
       "specs": {
         "material": "aluminium",
         "weight": 9.4
@@ -1263,7 +1263,7 @@
       "model": "Salacia",
       "brand": "Bold bicycles",
       "price": 218723,
-      "type": "Commuter bikes",
+      "type": "Commuter Bikes",
       "specs": {
         "material": "carbon",
         "weight": 12.8
@@ -1297,7 +1297,7 @@
       "model": "Mercury",
       "brand": "ScramBikes",
       "price": 7947,
-      "type": "Kids mountain bikes",
+      "type": "Kids Mountain Bikes",
       "specs": {
         "material": "alloy",
         "weight": 8.5
@@ -1331,7 +1331,7 @@
       "model": "Polydeuces",
       "brand": "Velorim",
       "price": 20384,
-      "type": "Kids mountain bikes",
+      "type": "Kids Mountain Bikes",
       "specs": {
         "material": "alloy",
         "weight": 14.3
@@ -1467,7 +1467,7 @@
       "model": "Phobos",
       "brand": "Classic wheels",
       "price": 7728,
-      "type": "Kids mountain bikes",
+      "type": "Kids Mountain Bikes",
       "specs": {
         "material": "aluminium",
         "weight": 14.4
@@ -1671,7 +1671,7 @@
       "model": "Titania",
       "brand": "Bicyk",
       "price": 226645,
-      "type": "Road bikes",
+      "type": "Road Bikes",
       "specs": {
         "material": "carbon",
         "weight": 16.2
@@ -1739,7 +1739,7 @@
       "model": "Sol",
       "brand": "Velorim",
       "price": 16783,
-      "type": "Kids mountain bikes",
+      "type": "Kids Mountain Bikes",
       "specs": {
         "material": "carbon",
         "weight": 13.2
@@ -1841,7 +1841,7 @@
       "model": "Uranus",
       "brand": "Bold bicycles",
       "price": 156366,
-      "type": "Commuter bikes",
+      "type": "Commuter Bikes",
       "specs": {
         "material": "alloy",
         "weight": 15.9
@@ -1909,7 +1909,7 @@
       "model": "Nereid",
       "brand": "nHill",
       "price": 22261,
-      "type": "Kids mountain bikes",
+      "type": "Kids Mountain Bikes",
       "specs": {
         "material": "aluminium",
         "weight": 7.5
@@ -1977,7 +1977,7 @@
       "model": "Vanth",
       "brand": "Ergonom",
       "price": 178352,
-      "type": "Road bikes",
+      "type": "Road Bikes",
       "specs": {
         "material": "carbon",
         "weight": 13.5
@@ -2011,7 +2011,7 @@
       "model": "Umbriel",
       "brand": "7th Generation",
       "price": 183789,
-      "type": "Commuter bikes",
+      "type": "Commuter Bikes",
       "specs": {
         "material": "alloy",
         "weight": 12.3
@@ -2113,7 +2113,7 @@
       "model": "Oberon",
       "brand": "Tots",
       "price": 22281,
-      "type": "Kids mountain bikes",
+      "type": "Kids Mountain Bikes",
       "specs": {
         "material": "full-carbon",
         "weight": 13.5
@@ -2249,7 +2249,7 @@
       "model": "Mars",
       "brand": "Bicyk",
       "price": 17350,
-      "type": "Kids mountain bikes",
+      "type": "Kids Mountain Bikes",
       "specs": {
         "material": "aluminium",
         "weight": 9.5
@@ -2283,7 +2283,7 @@
       "model": "Ariel",
       "brand": "Bold bicycles",
       "price": 13780,
-      "type": "Kids mountain bikes",
+      "type": "Kids Mountain Bikes",
       "specs": {
         "material": "carbon",
         "weight": 9.3
@@ -2351,7 +2351,7 @@
       "model": "Tethys",
       "brand": "Nord",
       "price": 32183,
-      "type": "Kids mountain bikes",
+      "type": "Kids Mountain Bikes",
       "specs": {
         "material": "carbon",
         "weight": 9.9
@@ -2419,7 +2419,7 @@
       "model": "Ariel",
       "brand": "Velorim",
       "price": 172833,
-      "type": "Road bikes",
+      "type": "Road Bikes",
       "specs": {
         "material": "carbon",
         "weight": 10.9
@@ -2453,7 +2453,7 @@
       "model": "Makemake",
       "brand": "Breakout",
       "price": 174911,
-      "type": "Commuter bikes",
+      "type": "Commuter Bikes",
       "specs": {
         "material": "carbon",
         "weight": 12.9
@@ -2521,7 +2521,7 @@
       "model": "Tethys",
       "brand": "Classic wheels",
       "price": 26242,
-      "type": "Kids mountain bikes",
+      "type": "Kids Mountain Bikes",
       "specs": {
         "material": "carbon",
         "weight": 15.7
@@ -2555,7 +2555,7 @@
       "model": "Tethys",
       "brand": "ScramBikes",
       "price": 25478,
-      "type": "Kids mountain bikes",
+      "type": "Kids Mountain Bikes",
       "specs": {
         "material": "carbon",
         "weight": 14.7
@@ -2589,7 +2589,7 @@
       "model": "Deimos",
       "brand": "Bold bicycles",
       "price": 118471,
-      "type": "Commuter bikes",
+      "type": "Commuter Bikes",
       "specs": {
         "material": "aluminium",
         "weight": 13.7
@@ -2657,7 +2657,7 @@
       "model": "Mars",
       "brand": "7th Generation",
       "price": 18730,
-      "type": "Kids mountain bikes",
+      "type": "Kids Mountain Bikes",
       "specs": {
         "material": "aluminium",
         "weight": 8.9
@@ -2861,7 +2861,7 @@
       "model": "Europa",
       "brand": "BikeShind",
       "price": 23194,
-      "type": "Kids mountain bikes",
+      "type": "Kids Mountain Bikes",
       "specs": {
         "material": "full-carbon",
         "weight": 15.7
@@ -2963,7 +2963,7 @@
       "model": "Polydeuces",
       "brand": "Tots",
       "price": 190856,
-      "type": "Road bikes",
+      "type": "Road Bikes",
       "specs": {
         "material": "full-carbon",
         "weight": 8.2
@@ -2997,7 +2997,7 @@
       "model": "Pluto",
       "brand": "Classic wheels",
       "price": 87830,
-      "type": "Commuter bikes",
+      "type": "Commuter Bikes",
       "specs": {
         "material": "alloy",
         "weight": 12.1
@@ -3337,7 +3337,7 @@
       "model": "Proteus",
       "brand": "ScramBikes",
       "price": 153712,
-      "type": "Road bikes",
+      "type": "Road Bikes",
       "specs": {
         "material": "alloy",
         "weight": 12.5
@@ -3371,7 +3371,7 @@
       "model": "Europa",
       "brand": "Eva",
       "price": 198677,
-      "type": "Commuter bikes",
+      "type": "Commuter Bikes",
       "specs": {
         "material": "carbon",
         "weight": 13.9
@@ -3677,7 +3677,7 @@
       "model": "Secto",
       "brand": "Peaknetic",
       "price": 135423,
-      "type": "Commuter bikes",
+      "type": "Commuter Bikes",
       "specs": {
         "material": "aluminium",
         "weight": 10.0
@@ -3711,7 +3711,7 @@
       "model": "Summit",
       "brand": "nHill",
       "price": 118856,
-      "type": "Mountain Bike",
+      "type": "Mountain Bikes",
       "specs": {
         "material": "alloy",
         "weight": 11.3
