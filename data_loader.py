@@ -3,6 +3,9 @@
 from dotenv import load_dotenv
 from redis.commands.search.indexDefinition import IndexDefinition, IndexType
 from redis.commands.search.field import TextField, TagField, NumericField, GeoField
+from redis.commands.search.query import Query
+from redis.commands.search.aggregation import AggregateRequest
+from redis.commands.search.reducers import count, count_distinct
 
 import json
 import io
@@ -57,6 +60,7 @@ redis_client.ft(BIKE_INDEX_NAME).create_index(
         TextField("$.description", as_name = "description"),
         TagField("$.specs.material", as_name = "material", sortable = True),
         NumericField("$.specs.weight", as_name = "weight", sortable = True),
+        NumericField("$.price", as_name = "price", sortable = True),
         TagField("$.inventory[*].storecode", as_name = "store"),
         NumericField("$.inventory[*].instock", as_name = "instock", sortable = True)
     ],
@@ -136,13 +140,39 @@ print(f"Loaded {stores_loaded} stores into Redis.")
 print("Verifying data...")
 
 try:
-    print("TODO verify some things...")
-    # TODO Check that the "Europa Eva" is bike RBC00100.
-    # TODO Check that there are XX bikes in the INR 150000-159999 price range.
-    # TODO Check for all the different types of bike.
+    # Check that the "Eva Europa" is bike RBC00100.
+    # ft.search idx:bikes "@brand:{Eva} @model:{Europa}" return 1 stockcode
+    results = redis_client.ft(BIKE_INDEX_NAME).search(Query("@brand:{Eva} @model:{Europa}").return_field("stockcode"))
+    assert 1 == len(results.docs), "Error searching for Eva Europa RBC00100."
+    assert "RBC00100" == results.docs[0].stockcode, "Incorrect stockcode returned for Eva Europa."
 
-    # TODO Check that store with pin "400098" is in Mumbai.
-    # TODO Check that there are 5 stores in India.
+    # Check that there are 7 bikes in the INR 150000-159999 price range.
+    # ft.aggregate idx:bikes "@price:[150000 159999]" groupby 0 reduce count 0 as numbikes
+    result = redis_client.ft(BIKE_INDEX_NAME).aggregate(AggregateRequest("@price:[150000 159999]").group_by([], count().alias("numbikes")))
+    assert 1 == len(result.rows), "Error counting bikes in 150000-159999 price range."
+    assert 7 == int(result.rows[0][1]), "Wrong number of bikes in 150000-159999 price range."
+
+    # Check that there are 7 different types of bike.
+    # ft.aggregate idx:bikes "*" groupby 0 reduce count_distinct 1 type as numtypes
+    result = redis_client.ft(BIKE_INDEX_NAME).aggregate(AggregateRequest("*").group_by([], count_distinct("type").alias("numtypes")))
+    assert 1 == len(result.rows), "Error counting distinct types of bike."
+    assert 7 == int(result.rows[0][1]), "Wrong number of distinct types of bike."
+
+    # Check that store with pin "400098" is in Mumbai.
+    # ft.search idx:stores "@pin:{400098}" return 1 city
+    results = redis_client.ft(STORE_INDEX_NAME).search(Query("@pin:{400098}").return_field("city"))
+    assert 1 == len(results.docs), "Error searching for Mumbai store."
+    assert "Mumbai" == results.docs[0].city, "Incorrect city returned for the 400098 store."
+
+    # Check that there are 5 stores in India.
+    # ft.aggregate idx:stores "@country:{India}" groupby 0 reduce count 0 as indianstores
+    result = redis_client.ft(STORE_INDEX_NAME).aggregate(AggregateRequest("@country:{India}").group_by([], count().alias("indianstores")))
+    assert 1 == len(result.rows), "Error counting stores in India."
+    assert 5 == int(result.rows[0][1]), "Wrong number of stores found in India."
+
+    # TODO Get the total stock count for the Velorim Jigger bike across all stores.
+    # Erm not sure...
+
 except AssertionError as e:
     # Something went wrong :(
     print("Data verification checks failed:")
