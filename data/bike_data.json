@@ -4,7 +4,7 @@
       "stockcode": "RBC00001",
       "model": "Deimos",
       "brand": "Ergonom",
-      "price": 4972,
+      "price": 184950,
       "type": "Enduro bikes",
       "specs": {
         "material": "alloy",
@@ -38,7 +38,7 @@
       "stockcode": "RBC00002",
       "model": "Vanth",
       "brand": "Tots",
-      "price": 4971,
+      "price": 220550,
       "type": "eBikes",
       "specs": {
         "material": "full-carbon",
@@ -72,7 +72,7 @@
       "stockcode": "RBC00003",
       "model": "Kirk",
       "brand": "Bold bicycles",
-      "price": 2508,
+      "price": 24999,
       "type": "Kids bikes",
       "specs": {
         "material": "alloy",
@@ -106,7 +106,7 @@
       "stockcode": "RBC00004",
       "model": "Phoebe",
       "brand": "Nord",
-      "price": 1920,
+      "price": 203475,
       "type": "Mountain bikes",
       "specs": {
         "material": "carbon",
@@ -140,7 +140,7 @@
       "stockcode": "RBC00005",
       "model": "Telesto",
       "brand": "BikeShind",
-      "price": 4827,
+      "price": 230000,
       "type": "Enduro bikes",
       "specs": {
         "material": "carbon",
@@ -174,7 +174,7 @@
       "stockcode": "RBC00006",
       "model": "Jupiter",
       "brand": "Breakout",
-      "price": 2013,
+      "price": 37485,
       "type": "Kids bikes",
       "specs": {
         "material": "full-carbon",
@@ -208,7 +208,7 @@
       "stockcode": "RBC00007",
       "model": "Varuna",
       "brand": "Breakout",
-      "price": 1673,
+      "price": 137821,
       "type": "Kids bikes",
       "specs": {
         "material": "alloy",
@@ -242,7 +242,7 @@
       "stockcode": "RBC00008",
       "model": "Polydeuces",
       "brand": "7th Generation",
-      "price": 3736,
+      "price": 52350,
       "type": "Road bikes",
       "specs": {
         "material": "full-carbon",
@@ -276,7 +276,7 @@
       "stockcode": "RBC00009",
       "model": "Quaoar",
       "brand": "nHill",
-      "price": 2072,
+      "price": 66650,
       "type": "Mountain bikes",
       "specs": {
         "material": "aluminium",
@@ -310,7 +310,7 @@
       "stockcode": "RBC00010",
       "model": "Salacia",
       "brand": "Bold bicycles",
-      "price": 1475,
+      "price": 74299,
       "type": "Commuter bikes",
       "specs": {
         "material": "aluminium",
@@ -344,7 +344,7 @@
       "stockcode": "RBC00011",
       "model": "Weywot",
       "brand": "BikeShind",
-      "price": 3264,
+      "price": 7850,
       "type": "Kids mountain bikes",
       "specs": {
         "material": "alloy",
@@ -378,7 +378,7 @@
       "stockcode": "RBC00012",
       "model": "Janeway",
       "brand": "Tots",
-      "price": 4944,
+      "price": 145675,
       "type": "Enduro bikes",
       "specs": {
         "material": "alloy",
@@ -412,7 +412,7 @@
       "stockcode": "RBC00013",
       "model": "Ariel",
       "brand": "Bold bicycles",
-      "price": 2458,
+      "price": 202490,
       "type": "Mountain bikes",
       "specs": {
         "material": "full-carbon",
@@ -446,7 +446,7 @@
       "stockcode": "RBC00014",
       "model": "Miranda",
       "brand": "Breakout",
-      "price": 756,
+      "price": 22279,
       "type": "Kids mountain bikes",
       "specs": {
         "material": "carbon",
@@ -480,7 +480,7 @@
       "stockcode": "RBC00015",
       "model": "Hygiea",
       "brand": "Bicyk",
-      "price": 2250,
+      "price": 201355,
       "type": "Road bikes",
       "specs": {
         "material": "full-carbon",
@@ -514,7 +514,7 @@
       "stockcode": "RBC00016",
       "model": "Proteus",
       "brand": "Ergonom",
-      "price": 2553,
+      "price": 210316,
       "type": "Mountain bikes",
       "specs": {
         "material": "carbon",
@@ -548,7 +548,7 @@
       "stockcode": "RBC00017",
       "model": "Weywot",
       "brand": "BikeShind",
-      "price": 2458,
+      "price": 32490,
       "type": "Kids mountain bikes",
       "specs": {
         "material": "alloy",
@@ -582,7 +582,7 @@
       "stockcode": "RBC00018",
       "model": "Dione",
       "brand": "Bold bicycles",
-      "price": 4692,
+      "price": 228526,
       "type": "Enduro bikes",
       "specs": {
         "material": "full-carbon",
@@ -616,7 +616,7 @@
       "stockcode": "RBC00019",
       "model": "Janeway",
       "brand": "ScramBikes",
-      "price": 1804,
+      "price": 18613,
       "type": "Kids bikes",
       "specs": {
         "material": "alloy",
@@ -650,7 +650,7 @@
       "stockcode": "RBC00020",
       "model": "Phoebe",
       "brand": "Nord",
-      "price": 2336,
+      "price": 162439,
       "type": "Mountain bikes",
       "specs": {
         "material": "alloy",
@@ -684,7 +684,7 @@
       "stockcode": "RBC00021",
       "model": "Sol",
       "brand": "Velorim",
-      "price": 1543,
+      "price": 177112,
       "type": "Road bikes",
       "specs": {
         "material": "aluminium",
@@ -718,7 +718,7 @@
       "stockcode": "RBC00022",
       "model": "Quaoar",
       "brand": "Peaknetic",
-      "price": 3940,
+      "price": 34577,
       "type": "Kids mountain bikes",
       "specs": {
         "material": "alloy",
@@ -752,7 +752,7 @@
       "stockcode": "RBC00023",
       "model": "Saturn",
       "brand": "nHill",
-      "price": 3040,
+      "price": 55435,
       "type": "Road bikes",
       "specs": {
         "material": "aluminium",
@@ -786,7 +786,7 @@
       "stockcode": "RBC00024",
       "model": "Miranda",
       "brand": "Eva",
-      "price": 2231,
+      "price": 23789,
       "type": "Kids bikes",
       "specs": {
         "material": "carbon",
@@ -820,7 +820,7 @@
       "stockcode": "RBC00025",
       "model": "Umbriel",
       "brand": "nHill",
-      "price": 1955,
+      "price": 36052,
       "type": "Kids bikes",
       "specs": {
         "material": "full-carbon",
@@ -854,7 +854,7 @@
       "stockcode": "RBC00026",
       "model": "Nereid",
       "brand": "Peaknetic",
-      "price": 544,
+      "price": 74814,
       "type": "Mountain bikes",
       "specs": {
         "material": "alloy",
@@ -888,7 +888,7 @@
       "stockcode": "RBC00027",
       "model": "Salacia",
       "brand": "Tots",
-      "price": 2325,
+      "price": 141533,
       "type": "Commuter bikes",
       "specs": {
         "material": "aluminium",
@@ -922,7 +922,7 @@
       "stockcode": "RBC00028",
       "model": "Enterprise",
       "brand": "Bold bicycles",
-      "price": 2514,
+      "price": 227103,
       "type": "Road bikes",
       "specs": {
         "material": "full-carbon",
@@ -956,7 +956,7 @@
       "stockcode": "RBC00029",
       "model": "Mimas",
       "brand": "nHill",
-      "price": 3063,
+      "price": 22329,
       "type": "Kids mountain bikes",
       "specs": {
         "material": "carbon",
@@ -990,7 +990,7 @@
       "stockcode": "RBC00030",
       "model": "Mimas",
       "brand": "Bold bicycles",
-      "price": 1591,
+      "price": 17066,
       "type": "Kids bikes",
       "specs": {
         "material": "aluminium",
@@ -1024,7 +1024,7 @@
       "stockcode": "RBC00031",
       "model": "Scorpion",
       "brand": "Bold bicycles",
-      "price": 3941,
+      "price": 94659,
       "type": "Commuter bikes",
       "specs": {
         "material": "alloy",
@@ -1058,7 +1058,7 @@
       "stockcode": "RBC00032",
       "model": "Telesto",
       "brand": "ScramBikes",
-      "price": 4906,
+      "price": 84156,
       "type": "Road bikes",
       "specs": {
         "material": "aluminium",
@@ -1092,7 +1092,7 @@
       "stockcode": "RBC00033",
       "model": "Telesto",
       "brand": "nHill",
-      "price": 4389,
+      "price": 36565,
       "type": "Kids mountain bikes",
       "specs": {
         "material": "full-carbon",
@@ -1126,7 +1126,7 @@
       "stockcode": "RBC00034",
       "model": "Callisto",
       "brand": "7th Generation",
-      "price": 4206,
+      "price": 146490,
       "type": "Road bikes",
       "specs": {
         "material": "aluminium",
@@ -1160,7 +1160,7 @@
       "stockcode": "RBC00035",
       "model": "Ncc1702",
       "brand": "nHill",
-      "price": 3526,
+      "price": 7471,
       "type": "Kids mountain bikes",
       "specs": {
         "material": "aluminium",
@@ -1194,7 +1194,7 @@
       "stockcode": "RBC00036",
       "model": "Jupiter",
       "brand": "Eva",
-      "price": 4265,
+      "price": 86350,
       "type": "Mountain bikes",
       "specs": {
         "material": "alloy",
@@ -1228,7 +1228,7 @@
       "stockcode": "RBC00037",
       "model": "Titan",
       "brand": "Bold bicycles",
-      "price": 511,
+      "price": 242096,
       "type": "eBikes",
       "specs": {
         "material": "full-carbon",
@@ -1262,7 +1262,7 @@
       "stockcode": "RBC00038",
       "model": "Salacia",
       "brand": "Bold bicycles",
-      "price": 3262,
+      "price": 218723,
       "type": "Commuter bikes",
       "specs": {
         "material": "carbon",
@@ -1296,7 +1296,7 @@
       "stockcode": "RBC00039",
       "model": "Mercury",
       "brand": "ScramBikes",
-      "price": 3289,
+      "price": 7947,
       "type": "Kids mountain bikes",
       "specs": {
         "material": "alloy",
@@ -1330,7 +1330,7 @@
       "stockcode": "RBC00040",
       "model": "Polydeuces",
       "brand": "Velorim",
-      "price": 2918,
+      "price": 20384,
       "type": "Kids mountain bikes",
       "specs": {
         "material": "alloy",
@@ -1364,7 +1364,7 @@
       "stockcode": "RBC00041",
       "model": "Orcus",
       "brand": "Peaknetic",
-      "price": 4854,
+      "price": 229872,
       "type": "eBikes",
       "specs": {
         "material": "aluminium",
@@ -1398,7 +1398,7 @@
       "stockcode": "RBC00042",
       "model": "Tethys",
       "brand": "Velorim",
-      "price": 4080,
+      "price": 176110,
       "type": "Enduro bikes",
       "specs": {
         "material": "carbon",
@@ -1432,7 +1432,7 @@
       "stockcode": "RBC00043",
       "model": "Janeway",
       "brand": "Bicyk",
-      "price": 730,
+      "price": 55137,
       "type": "Enduro bikes",
       "specs": {
         "material": "aluminium",
@@ -1466,7 +1466,7 @@
       "stockcode": "RBC00044",
       "model": "Phobos",
       "brand": "Classic wheels",
-      "price": 4743,
+      "price": 7728,
       "type": "Kids mountain bikes",
       "specs": {
         "material": "aluminium",
@@ -1500,7 +1500,7 @@
       "stockcode": "RBC00045",
       "model": "Polydeuces",
       "brand": "Tots",
-      "price": 1139,
+      "price": 93830,
       "type": "Mountain bikes",
       "specs": {
         "material": "alloy",
@@ -1534,7 +1534,7 @@
       "stockcode": "RBC00046",
       "model": "Rhea",
       "brand": "Eva",
-      "price": 1698,
+      "price": 139881,
       "type": "Mountain bikes",
       "specs": {
         "material": "aluminium",
@@ -1568,7 +1568,7 @@
       "stockcode": "RBC00047",
       "model": "Haumea",
       "brand": "Nord",
-      "price": 1885,
+      "price": 155286,
       "type": "Mountain bikes",
       "specs": {
         "material": "aluminium",
@@ -1602,7 +1602,7 @@
       "stockcode": "RBC00048",
       "model": "Picard",
       "brand": "Pedal pals",
-      "price": 4251,
+      "price": 167197,
       "type": "Enduro bikes",
       "specs": {
         "material": "aluminium",
@@ -1636,7 +1636,7 @@
       "stockcode": "RBC00049",
       "model": "Mercury",
       "brand": "BikeShind",
-      "price": 1635,
+      "price": 234691,
       "type": "eBikes",
       "specs": {
         "material": "carbon",
@@ -1670,7 +1670,7 @@
       "stockcode": "RBC00050",
       "model": "Titania",
       "brand": "Bicyk",
-      "price": 2994,
+      "price": 226645,
       "type": "Road bikes",
       "specs": {
         "material": "carbon",
@@ -1704,7 +1704,7 @@
       "stockcode": "RBC00051",
       "model": "Uranus",
       "brand": "Breakout",
-      "price": 1128,
+      "price": 19924,
       "type": "Kids bikes",
       "specs": {
         "material": "full-carbon",
@@ -1738,7 +1738,7 @@
       "stockcode": "RBC00052",
       "model": "Sol",
       "brand": "Velorim",
-      "price": 3724,
+      "price": 16783,
       "type": "Kids mountain bikes",
       "specs": {
         "material": "carbon",
@@ -1772,7 +1772,7 @@
       "stockcode": "RBC00053",
       "model": "Pallas",
       "brand": "Velorim",
-      "price": 799,
+      "price": 165821,
       "type": "eBikes",
       "specs": {
         "material": "aluminium",
@@ -1806,7 +1806,7 @@
       "stockcode": "RBC00054",
       "model": "Europa",
       "brand": "Tots",
-      "price": 2960,
+      "price": 83844,
       "type": "Mountain bikes",
       "specs": {
         "material": "alloy",
@@ -1840,7 +1840,7 @@
       "stockcode": "RBC00055",
       "model": "Uranus",
       "brand": "Bold bicycles",
-      "price": 3112,
+      "price": 156366,
       "type": "Commuter bikes",
       "specs": {
         "material": "alloy",
@@ -1874,7 +1874,7 @@
       "stockcode": "RBC00056",
       "model": "Vanth",
       "brand": "nHill",
-      "price": 4583,
+      "price": 17547,
       "type": "Kids bikes",
       "specs": {
         "material": "full-carbon",
@@ -1908,7 +1908,7 @@
       "stockcode": "RBC00057",
       "model": "Nereid",
       "brand": "nHill",
-      "price": 2698,
+      "price": 22261,
       "type": "Kids mountain bikes",
       "specs": {
         "material": "aluminium",
@@ -1942,7 +1942,7 @@
       "stockcode": "RBC00058",
       "model": "Quaoar",
       "brand": "Peaknetic",
-      "price": 859,
+      "price": 7764,
       "type": "Kids bikes",
       "specs": {
         "material": "aluminium",
@@ -1976,7 +1976,7 @@
       "stockcode": "RBC00059",
       "model": "Vanth",
       "brand": "Ergonom",
-      "price": 2165,
+      "price": 178352,
       "type": "Road bikes",
       "specs": {
         "material": "carbon",
@@ -2010,7 +2010,7 @@
       "stockcode": "RBC00060",
       "model": "Umbriel",
       "brand": "7th Generation",
-      "price": 2231,
+      "price": 183789,
       "type": "Commuter bikes",
       "specs": {
         "material": "alloy",
@@ -2044,7 +2044,7 @@
       "stockcode": "RBC00061",
       "model": "Titan",
       "brand": "nHill",
-      "price": 4447,
+      "price": 16343,
       "type": "Kids bikes",
       "specs": {
         "material": "carbon",
@@ -2078,7 +2078,7 @@
       "stockcode": "RBC00062",
       "model": "Orcus",
       "brand": "BikeShind",
-      "price": 2728,
+      "price": 224732,
       "type": "Enduro bikes",
       "specs": {
         "material": "aluminium",
@@ -2112,7 +2112,7 @@
       "stockcode": "RBC00063",
       "model": "Oberon",
       "brand": "Tots",
-      "price": 1278,
+      "price": 22281,
       "type": "Kids mountain bikes",
       "specs": {
         "material": "full-carbon",
@@ -2146,7 +2146,7 @@
       "stockcode": "RBC00064",
       "model": "Pluto",
       "brand": "7th Generation",
-      "price": 2326,
+      "price": 191615,
       "type": "Mountain bikes",
       "specs": {
         "material": "full-carbon",
@@ -2180,7 +2180,7 @@
       "stockcode": "RBC00065",
       "model": "Charon",
       "brand": "Classic wheels",
-      "price": 4271,
+      "price": 151844,
       "type": "Enduro bikes",
       "specs": {
         "material": "alloy",
@@ -2214,7 +2214,7 @@
       "stockcode": "RBC00066",
       "model": "Phoebe",
       "brand": "Tots",
-      "price": 4289,
+      "price": 223327,
       "type": "Mountain bikes",
       "specs": {
         "material": "full-carbon",
@@ -2248,7 +2248,7 @@
       "stockcode": "RBC00067",
       "model": "Mars",
       "brand": "Bicyk",
-      "price": 2080,
+      "price": 17350,
       "type": "Kids mountain bikes",
       "specs": {
         "material": "aluminium",
@@ -2282,7 +2282,7 @@
       "stockcode": "RBC00068",
       "model": "Ariel",
       "brand": "Bold bicycles",
-      "price": 1017,
+      "price": 13780,
       "type": "Kids mountain bikes",
       "specs": {
         "material": "carbon",
@@ -2316,7 +2316,7 @@
       "stockcode": "RBC00069",
       "model": "Hiiaka",
       "brand": "Peaknetic",
-      "price": 3082,
+      "price": 153895,
       "type": "Enduro bikes",
       "specs": {
         "material": "aluminium",
@@ -2350,7 +2350,7 @@
       "stockcode": "RBC00070",
       "model": "Tethys",
       "brand": "Nord",
-      "price": 3304,
+      "price": 32183,
       "type": "Kids mountain bikes",
       "specs": {
         "material": "carbon",
@@ -2384,7 +2384,7 @@
       "stockcode": "RBC00071",
       "model": "Io",
       "brand": "7th Generation",
-      "price": 4945,
+      "price": 227369,
       "type": "eBikes",
       "specs": {
         "material": "full-carbon",
@@ -2418,7 +2418,7 @@
       "stockcode": "RBC00072",
       "model": "Ariel",
       "brand": "Velorim",
-      "price": 2098,
+      "price": 172833,
       "type": "Road bikes",
       "specs": {
         "material": "carbon",
@@ -2452,7 +2452,7 @@
       "stockcode": "RBC00073",
       "model": "Makemake",
       "brand": "Breakout",
-      "price": 4551,
+      "price": 174911,
       "type": "Commuter bikes",
       "specs": {
         "material": "carbon",
@@ -2486,7 +2486,7 @@
       "stockcode": "RBC00074",
       "model": "Iapetus",
       "brand": "BikeShind",
-      "price": 2637,
+      "price": 87236,
       "type": "Mountain bikes",
       "specs": {
         "material": "aluminium",
@@ -2520,7 +2520,7 @@
       "stockcode": "RBC00075",
       "model": "Tethys",
       "brand": "Classic wheels",
-      "price": 2018,
+      "price": 26242,
       "type": "Kids mountain bikes",
       "specs": {
         "material": "carbon",
@@ -2554,7 +2554,7 @@
       "stockcode": "RBC00076",
       "model": "Tethys",
       "brand": "ScramBikes",
-      "price": 3344,
+      "price": 25478,
       "type": "Kids mountain bikes",
       "specs": {
         "material": "carbon",
@@ -2588,7 +2588,7 @@
       "stockcode": "RBC00077",
       "model": "Deimos",
       "brand": "Bold bicycles",
-      "price": 2652,
+      "price": 118471,
       "type": "Commuter bikes",
       "specs": {
         "material": "aluminium",
@@ -2622,7 +2622,7 @@
       "stockcode": "RBC00078",
       "model": "Iapetus",
       "brand": "ScramBikes",
-      "price": 2707,
+      "price": 223002,
       "type": "Enduro bikes",
       "specs": {
         "material": "full-carbon",
@@ -2656,7 +2656,7 @@
       "stockcode": "RBC00079",
       "model": "Mars",
       "brand": "7th Generation",
-      "price": 2206,
+      "price": 18730,
       "type": "Kids mountain bikes",
       "specs": {
         "material": "aluminium",
@@ -2690,7 +2690,7 @@
       "stockcode": "RBC00080",
       "model": "Falcon",
       "brand": "Breakout",
-      "price": 826,
+      "price": 168045,
       "type": "Mountain bikes",
       "specs": {
         "material": "aluminium",
@@ -2724,7 +2724,7 @@
       "stockcode": "RBC00081",
       "model": "Phobos",
       "brand": "Bold bicycles",
-      "price": 1966,
+      "price": 161959,
       "type": "Mountain bikes",
       "specs": {
         "material": "alloy",
@@ -2758,7 +2758,7 @@
       "stockcode": "RBC00082",
       "model": "Jupiter",
       "brand": "Peaknetic",
-      "price": 1445,
+      "price": 119039,
       "type": "Mountain bikes",
       "specs": {
         "material": "alloy",
@@ -2792,7 +2792,7 @@
       "stockcode": "RBC00083",
       "model": "Vesta",
       "brand": "Peaknetic",
-      "price": 4506,
+      "price": 17204,
       "type": "Kids bikes",
       "specs": {
         "material": "aluminium",
@@ -2826,7 +2826,7 @@
       "stockcode": "RBC00084",
       "model": "Millenium-falcon",
       "brand": "Bicyk",
-      "price": 1529,
+      "price": 15959,
       "type": "Kids bikes",
       "specs": {
         "material": "aluminium",
@@ -2860,7 +2860,7 @@
       "stockcode": "RBC00085",
       "model": "Europa",
       "brand": "BikeShind",
-      "price": 2855,
+      "price": 23194,
       "type": "Kids mountain bikes",
       "specs": {
         "material": "full-carbon",
@@ -2894,7 +2894,7 @@
       "stockcode": "RBC00086",
       "model": "Iapetus",
       "brand": "Bicyk",
-      "price": 2937,
+      "price": 221950,
       "type": "Enduro bikes",
       "specs": {
         "material": "full-carbon",
@@ -2928,7 +2928,7 @@
       "stockcode": "RBC00087",
       "model": "Ncc1702",
       "brand": "Ergonom",
-      "price": 3145,
+      "price": 159085,
       "type": "Enduro bikes",
       "specs": {
         "material": "aluminium",
@@ -2962,7 +2962,7 @@
       "stockcode": "RBC00088",
       "model": "Polydeuces",
       "brand": "Tots",
-      "price": 2074,
+      "price": 190856,
       "type": "Road bikes",
       "specs": {
         "material": "full-carbon",
@@ -2996,7 +2996,7 @@
       "stockcode": "RBC00089",
       "model": "Pluto",
       "brand": "Classic wheels",
-      "price": 702,
+      "price": 87830,
       "type": "Commuter bikes",
       "specs": {
         "material": "alloy",
@@ -3030,7 +3030,7 @@
       "stockcode": "RBC00090",
       "model": "Jupiter",
       "brand": "Classic wheels",
-      "price": 1720,
+      "price": 181693,
       "type": "Enduro bikes",
       "specs": {
         "material": "full-carbon",
@@ -3064,7 +3064,7 @@
       "stockcode": "RBC00091",
       "model": "Deimos",
       "brand": "Bicyk",
-      "price": 2435,
+      "price": 22595,
       "type": "Kids bikes",
       "specs": {
         "material": "aluminium",
@@ -3098,7 +3098,7 @@
       "stockcode": "RBC00092",
       "model": "Eris",
       "brand": "nHill",
-      "price": 4599,
+      "price": 178865,
       "type": "Enduro bikes",
       "specs": {
         "material": "full-carbon",
@@ -3132,7 +3132,7 @@
       "stockcode": "RBC00093",
       "model": "Titan",
       "brand": "Peaknetic",
-      "price": 672,
+      "price": 8359,
       "type": "Kids bikes",
       "specs": {
         "material": "aluminium",
@@ -3166,7 +3166,7 @@
       "stockcode": "RBC00094",
       "model": "Vesta",
       "brand": "Bicyk",
-      "price": 565,
+      "price": 185144,
       "type": "Mountain bikes",
       "specs": {
         "material": "full-carbon",
@@ -3200,7 +3200,7 @@
       "stockcode": "RBC00095",
       "model": "Mimas",
       "brand": "Eva",
-      "price": 3485,
+      "price": 177094,
       "type": "Mountain bikes",
       "specs": {
         "material": "alloy",
@@ -3234,7 +3234,7 @@
       "stockcode": "RBC00096",
       "model": "Proteus",
       "brand": "nHill",
-      "price": 2084,
+      "price": 171679,
       "type": "Enduro bikes",
       "specs": {
         "material": "alloy",
@@ -3268,7 +3268,7 @@
       "stockcode": "RBC00097",
       "model": "Triton",
       "brand": "Bicyk",
-      "price": 4300,
+      "price": 154234,
       "type": "Mountain bikes",
       "specs": {
         "material": "aluminium",
@@ -3302,7 +3302,7 @@
       "stockcode": "RBC00098",
       "model": "Ganymede",
       "brand": "Tots",
-      "price": 2336,
+      "price": 9439,
       "type": "Kids bikes",
       "specs": {
         "material": "aluminium",
@@ -3336,7 +3336,7 @@
       "stockcode": "RBC00099",
       "model": "Proteus",
       "brand": "ScramBikes",
-      "price": 2837,
+      "price": 153712,
       "type": "Road bikes",
       "specs": {
         "material": "alloy",
@@ -3370,7 +3370,7 @@
       "stockcode": "RBC00100",
       "model": "Europa",
       "brand": "Eva",
-      "price": 4621,
+      "price": 198677,
       "type": "Commuter bikes",
       "specs": {
         "material": "carbon",
@@ -3404,7 +3404,7 @@
       "stockcode": "RBC00101",
       "model": "Jigger",
       "brand": "Velorim",
-      "price": 270,
+      "price": 22242,
       "type": "Kids bikes",
       "specs": {
         "material": "aluminium",
@@ -3438,7 +3438,7 @@
       "stockcode": "RBC00102",
       "model": "Hillcraft",
       "brand": "Bicyk",
-      "price": 1200,
+      "price": 9856,
       "type": "Kids Mountain Bikes",
       "specs": {
         "material": "carbon",
@@ -3472,7 +3472,7 @@
       "stockcode": "RBC00103",
       "model": "Chook air 5",
       "brand": "Nord",
-      "price": 815,
+      "price": 7139,
       "type": "Kids Mountain Bikes",
       "specs": {
         "material": "alloy",
@@ -3506,7 +3506,7 @@
       "stockcode": "RBC00104",
       "model": "Eva 291",
       "brand": "Eva",
-      "price": 3400,
+      "price": 180092,
       "type": "Mountain Bikes",
       "specs": {
         "material": "carbon",
@@ -3540,7 +3540,7 @@
       "stockcode": "RBC00105",
       "model": "Kahuna",
       "brand": "Noka Bikes",
-      "price": 3200,
+      "price": 163616,
       "type": "Mountain Bikes",
       "specs": {
         "material": "alloy",
@@ -3574,7 +3574,7 @@
       "stockcode": "RBC00106",
       "model": "XBN 2.1 Alloy",
       "brand": "Breakout",
-      "price": 810,
+      "price": 166727,
       "type": "Road Bikes",
       "specs": {
         "material": "alloy",
@@ -3608,7 +3608,7 @@
       "stockcode": "RBC00107",
       "model": "WattBike",
       "brand": "ScramBikes",
-      "price": 2300,
+      "price": 189474,
       "type": "eBikes",
       "specs": {
         "material": "alloy",
@@ -3642,7 +3642,7 @@
       "stockcode": "RBC00108",
       "model": "Soothe Electric bike",
       "brand": "Peaknetic",
-      "price": 1950,
+      "price": 160641,
       "type": "eBikes",
       "specs": {
         "material": "alloy",
@@ -3676,7 +3676,7 @@
       "stockcode": "RBC00109",
       "model": "Secto",
       "brand": "Peaknetic",
-      "price": 430,
+      "price": 135423,
       "type": "Commuter bikes",
       "specs": {
         "material": "aluminium",
@@ -3710,7 +3710,7 @@
       "stockcode": "RBC00110",
       "model": "Summit",
       "brand": "nHill",
-      "price": 1200,
+      "price": 118856,
       "type": "Mountain Bike",
       "specs": {
         "material": "alloy",
@@ -3744,7 +3744,7 @@
       "stockcode": "RBC00111",
       "model": "ThrillCycle",
       "brand": "BikeShind",
-      "price": 815,
+      "price": 167139,
       "type": "Commuter Bikes",
       "specs": {
         "material": "alloy",
