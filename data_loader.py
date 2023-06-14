@@ -137,6 +137,12 @@ print("Verifying data...")
 
 try:
     print("TODO verify some things...")
+    # TODO Check that the "Europa Eva" is bike RBC00100.
+    # TODO Check that there are XX bikes in the INR 150000-159999 price range.
+    # TODO Check for all the different types of bike.
+
+    # TODO Check that store with pin "400098" is in Mumbai.
+    # TODO Check that there are 5 stores in India.
 except AssertionError as e:
     # Something went wrong :(
     print("Data verification checks failed:")
