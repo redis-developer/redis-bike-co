@@ -65,3 +65,11 @@ Example store query:
 ```
 TODO something with GEO
 ```
+
+Start the application:
+
+```
+poetry run flask run
+```
+
+Then go to `http://localhost:5000`.
