@@ -10,7 +10,10 @@
         "pin": "600026",
         "country": "India"
       },
-      "position": "80.2057207,13.0511065"
+      "position": "80.2057207,13.0511065",
+      "amenities": [
+        "parking", "rentals", "repairs"
+      ]
     },
     { 
       "storecode": "KO",
@@ -22,7 +25,10 @@
         "pin": "682002",
         "country": "India"
       },
-      "position": "76.2415241,9.9436983"
+      "position": "76.2415241,9.9436983",
+      "amenities": [
+        "parking", "rentals", "repairs", "wifi"
+      ]
     },
     { 
       "storecode": "BE",
@@ -34,7 +40,10 @@
         "pin": "560001",
         "country": "India"
       },
-      "position": "77.5120754,12.9918699"
+      "position": "77.5120754,12.9918699",
+      "amenities": [
+        "rentals", "repairs", "cafe", "wifi"
+      ]
     },
     { 
       "storecode": "MU",
@@ -46,7 +55,11 @@
         "pin": "400098",
         "country": "India"
       },
-      "position": "72.8305678,19.0666028"
+      "position": "72.8305678,19.0666028",
+      "amenities": [
+        "parking", "repairs"
+      ]
+
     },
     { 
       "storecode": "KA",
@@ -58,7 +71,10 @@
         "pin": "208003",
         "country": "India"
       },
-      "position": "80.3060951,26.4497247"
+      "position": "80.3060951,26.4497247",
+      "amenities": [
+        "parking", "wifi", "repairs"
+      ]
     }
   ]
 }
