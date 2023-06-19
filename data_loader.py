@@ -60,9 +60,7 @@ redis_client.ft(BIKE_INDEX_NAME).create_index(
         TextField("$.description", as_name = "description"),
         TagField("$.specs.material", as_name = "material", sortable = True),
         NumericField("$.specs.weight", as_name = "weight", sortable = True),
-        NumericField("$.price", as_name = "price", sortable = True),
-        TagField("$.inventory[*].storecode", as_name = "store"),
-        NumericField("$.inventory[*].instock", as_name = "instock", sortable = True)
+        NumericField("$.price", as_name = "price", sortable = True)
     ],
     definition = IndexDefinition(
         index_type = IndexType.JSON,
@@ -79,7 +77,8 @@ redis_client.ft(STORE_INDEX_NAME).create_index(
         TagField("$.address.state", as_name = "state"),
         TagField("$.address.pin", as_name = "pin"),
         TagField("$.address.country", as_name = "country"),
-        GeoField("$.position", as_name = "position")
+        GeoField("$.position", as_name = "position"),
+        TagField("$.amenities", as_name = "amenities")
     ],
     definition = IndexDefinition(
         index_type = IndexType.JSON,
@@ -170,8 +169,11 @@ try:
     assert 1 == len(result.rows), "Error counting stores in India."
     assert 5 == int(result.rows[0][1]), "Wrong number of stores found in India."
 
-    # TODO Get the total stock count for the Velorim Jigger bike across all stores.
-    # Erm not sure...
+    # Check that 2 stores have parking and offer rentals.
+    # ft.aggregate idx:stores "@amenities:{parking} @amenities:{rentals}" groupby 0 reduce count 0 as parkingandrentals
+    result = redis_client.ft(STORE_INDEX_NAME).aggregate(AggregateRequest("@amenities:{parking} @amenities:{rentals}").group_by([], count().alias("parkingandrentals")))
+    assert 1 == len(result.rows), "Error counting stores with parking and rentals."
+    assert 2 == int(result.rows[0][1]), "Wrong number of stores found with parking and rentals."
 
 except AssertionError as e:
     # Something went wrong :(
