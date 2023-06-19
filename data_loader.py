@@ -175,6 +175,13 @@ try:
     assert 1 == len(result.rows), "Error counting stores with parking and rentals."
     assert 2 == int(result.rows[0][1]), "Wrong number of stores found with parking and rentals."
 
+    # Check that we get the Kanpur store back when performing a search from 
+    # a position in Lucknow with a 100km radius.
+    # ft.search idx:stores "@position:[80.8599399 26.848668 100 km]" return 1 storecode
+    results = redis_client.ft(STORE_INDEX_NAME).search(Query("@position:[80.8599399 26.848668 100 km]").return_field("storecode"))
+    assert 1 == len(results.docs), "Error in geo search results."
+    assert "KA" == results.docs[0].storecode, "Incorrect store code returned for store geo search."
+
 except AssertionError as e:
     # Something went wrong :(
     print("Data verification checks failed:")
