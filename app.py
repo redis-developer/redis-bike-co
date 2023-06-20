@@ -15,7 +15,7 @@ STORE_INDEX_NAME = "idx:stores"
 # TODO KEY NAMING CONSTANTS AND MOVE TO .env... and same in data loader.
 
 # Connect to Redis.
-redis_client = redis.from_url(os.getenv("REDIS_URL", "redis://localhost:6379/?decode_responses=True"))
+redis_client = redis.from_url(os.getenv("REDIS_URL"))
 
 app = Flask(__name__)
 

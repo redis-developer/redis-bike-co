@@ -26,7 +26,7 @@ EXIT_CODE_ERROR = 1
 
 # Connect to Redis and reset to a known state.
 print(f"Connecting to Redis.")
-redis_client = redis.from_url(os.getenv("REDIS_URL", "redis://localhost:6379/?decode_responses=True"))
+redis_client = redis.from_url(os.getenv("REDIS_URL"))
 
 print(f"Deleting any existing data with {REDIS_KEY_BASE} prefix.")
 pipeline = redis_client.pipeline(transaction = False)
