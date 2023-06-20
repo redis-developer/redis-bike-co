@@ -4,6 +4,7 @@ from redis.commands.search.aggregation import AggregateRequest
 from redis.commands.search.query import Query
 from redis.exceptions import ResponseError
 
+import json
 import os
 import redis
 
@@ -19,8 +20,26 @@ redis_client = redis.from_url(os.getenv("REDIS_URL"))
 
 app = Flask(__name__)
 
-# TODO Find stores within a given radius of a point that have certain amenities.
+# Find stores within a given radius of a point that have certain amenities.
+# ft.search idx:stores "@position:[80.8599399 26.848668 100 km] @amenities{wifi} @amenities{cafe}"
+@app.route("/api/storesnearby/<lat>/<lng>/<int:radius>/<unit>/<amenities>")
+def stores_in_radius(lat, lng, radius, unit, amenities):
+    all_amenities = amenities.split(",")
+    amenities_clause = ""
 
+    for amenity in all_amenities:
+        amenities_clause = f"{amenities_clause} @amenities:{{{amenity}}} "
+       
+    result = redis_client.ft(STORE_INDEX_NAME).search(
+       Query(f"@position:[{lng} {lat} {radius} {unit}] {amenities_clause}")
+    )
+   
+    vals = []
+
+    for doc in result.docs:
+        vals.append(json.loads(doc["json"]))
+
+    return dict(data = vals)
 
 # Find all the different values of an indexed attribute.
 # ft.aggregate idx:bikes "*" groupby 1 @<attr>
@@ -29,7 +48,9 @@ def values_for_attr(attr):
     vals = []
 
     try:
-        result = redis_client.ft(BIKE_INDEX_NAME).aggregate(AggregateRequest("*").group_by([f"@{attr}"]))
+        result = redis_client.ft(BIKE_INDEX_NAME).aggregate(
+           AggregateRequest("*").group_by([f"@{attr}"])
+        )
 
         for r in result.rows:
            # r = [ "attr", "val" ]
@@ -48,9 +69,13 @@ def values_for_attr(attr):
 def find_adult_bikes_in_range(min, max, offset, num_results):
     vals = []
    
-    results = redis_client.ft(BIKE_INDEX_NAME).search(Query(f"(-@type:{{Kids Bikes|Kids Mountain Bikes}}) @price:[{min} {max}]").sort_by("price", asc = False).return_fields("stockcode", "brand", "model", "price").paging(offset, num_results))
+    results = redis_client.ft(BIKE_INDEX_NAME).search(
+        Query(f"(-@type:{{Kids Bikes|Kids Mountain Bikes}}) @price:[{min} {max}]")
+            .sort_by("price", asc = False)
+            .return_fields("stockcode", "brand", "model", "price")
+            .paging(offset, num_results))
 
-    for doc in results.docs:   
+    for doc in results.docs:  
         vals.append(dict(
             stockcode = doc["stockcode"],
             brand = doc["brand"],
@@ -71,23 +96,25 @@ def get_store_details(storecode):
 # Get the brand, model and price for a bike given a stock code.
 @app.route("/api/bikedetails/<stockcode>", methods = ["GET"])
 def get_bike_details_for_stockcode(stockcode):
-   vals = []
+    vals = []
 
-   details = redis_client.json().get(f"redisbikeco:bike:{stockcode}", "$.brand", "$.model", "$.price")
+    details = redis_client.json().get(
+      f"redisbikeco:bike:{stockcode}", "$.brand", "$.model", "$.price"
+    )
 
-   if details:
-      vals.append(dict(
-         brand = details["$.brand"][0],
-         model = details["$.model"][0],
-         price = details["$.price"][0]
-      ))
+    if details:
+        vals.append(dict(
+            brand = details["$.brand"][0],
+            model = details["$.model"][0],
+            price = details["$.price"][0]
+        ))
 
-   return dict(data = vals)
+    return dict(data = vals)
 
 # TODO add links to all the routes...
 @app.route("/", methods = ["GET"])
 def home_page():
-  return """
+    return """
     <!DOCTYPE html>
     <html>
         <head>
@@ -95,7 +122,15 @@ def home_page():
         </head>
         <body>
             <h1>Redis Bike Company Demo</h1>
+            <p>Example queries:</p>
+            <ul>
+                <li><a target="_blank" href="/api/storesnearby/26.848668/80.8599399/10000/km/wifi,rentals">Find stores near location</a>.</li>
+                <li><a target="_blank" href="/api/valuesfor/brand">Find distinct values for a tag</a>.</li>
+                <li><a target="_blank" href="/api/adultbikes/20000/300000/0/2">Find bikes matching multiple criteria</a>.</li>
+                <li><a target="_blank" href="/api/storedetails/ch">Get all store details for a given store</a>.</li>
+                <li><a target="_blank" href="/api/bikedetails/rbc00004">Get some details about a bike given a stockcode</a>.</li>
+            </ul>
             <p><a href="https://github.com/redis-developer/redis-bike-co">Read the documentation on GitHub</a>.</p>
         </body>
     </html>
-  """
+    """
