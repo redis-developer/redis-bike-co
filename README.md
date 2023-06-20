@@ -6,6 +6,12 @@ TODO README!
 poetry install
 ```
 
+Create an environment file:
+
+```
+cp env.example .env
+```
+
 ```
 poetry run python data_loader.py
 ```
