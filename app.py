@@ -11,9 +11,10 @@ import redis
 # Load environment variables / secrets from .env file.
 load_dotenv()
 
-BIKE_INDEX_NAME = "idx:bikes" # TODO move to .env and same in data loader.
-STORE_INDEX_NAME = "idx:stores"
-# TODO KEY NAMING CONSTANTS AND MOVE TO .env... and same in data loader.
+STORE_KEY_BASE = os.getenv("STORE_KEY_BASE")
+BIKE_KEY_BASE = os.getenv("BIKE_KEY_BASE")
+BIKE_INDEX_NAME = os.getenv("BIKE_INDEX_NAME")
+STORE_INDEX_NAME = os.getenv("STORE_INDEX_NAME")
 
 # Connect to Redis.
 redis_client = redis.from_url(os.getenv("REDIS_URL"))
@@ -89,7 +90,7 @@ def find_adult_bikes_in_range(min, max, offset, num_results):
 # json.get redisbikeco:store:<storecode> $
 @app.route("/api/storedetails/<storecode>", methods = ["GET"])
 def get_store_details(storecode):
-   details = redis_client.json().get(f"redisbikeco:store:{storecode}", "$")
+   details = redis_client.json().get(f"{STORE_KEY_BASE}:{storecode}", "$")
 
    return dict(data = details)
 
@@ -99,7 +100,7 @@ def get_bike_details_for_stockcode(stockcode):
     vals = []
 
     details = redis_client.json().get(
-      f"redisbikeco:bike:{stockcode}", "$.brand", "$.model", "$.price"
+      f"{BIKE_KEY_BASE}:{stockcode}", "$.brand", "$.model", "$.price"
     )
 
     if details:

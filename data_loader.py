@@ -17,11 +17,11 @@ load_dotenv()
 
 BIKES_DATASET_SIZE = 0 # Number of bikes we expect to load.
 STORES_DATASET_SIZE = 0 # Number of stores we expect to load.
-REDIS_KEY_BASE = "redisbikeco"
-BIKE_KEY_BASE = f"{REDIS_KEY_BASE}:bike"
-STORE_KEY_BASE = f"{REDIS_KEY_BASE}:store"
-BIKE_INDEX_NAME = "idx:bikes"
-STORE_INDEX_NAME = "idx:stores"
+REDIS_KEY_BASE = os.getenv("REDIS_KEY_BASE")
+BIKE_KEY_BASE = os.getenv("BIKE_KEY_BASE")
+STORE_KEY_BASE = os.getenv("STORE_KEY_BASE")
+BIKE_INDEX_NAME = os.getenv("BIKE_INDEX_NAME")
+STORE_INDEX_NAME = os.getenv("STORE_INDEX_NAME")
 EXIT_CODE_ERROR = 1
 
 # Connect to Redis and reset to a known state.
