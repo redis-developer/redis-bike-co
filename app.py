@@ -112,7 +112,6 @@ def get_bike_details_for_stockcode(stockcode):
 
     return dict(data = vals)
 
-# TODO add links to all the routes...
 @app.route("/", methods = ["GET"])
 def home_page():
     return """
