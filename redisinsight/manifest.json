@@ -1,0 +1,37 @@
+{
+  "type": "group",
+  "id": "redis_days_india",
+  "label": "Redis Days India",
+  "args": {
+    "withBorder": true,
+    "initialIsOpen": true
+  },
+  "children": [
+    {
+      "type": "group",
+      "id": "redis_bike_co",
+      "label": "Redis Bike Co",
+      "args": {
+        "initialIsOpen": true
+      },
+      "children": [
+        {
+          "type": "internal-link",
+          "id": "managing_json",
+          "label": "Managing JSON Documents",
+          "args": {
+            "path": "/redis-bike-co/managing_json.md"
+          }
+        },
+        {
+          "type": "internal-link",
+          "id": "querying_json",
+          "label": "Querying JSON Documents",
+          "args": {
+            "path": "/redis-bike-co/querying_json.md"
+          }
+        }
+      ]
+    }
+  ]
+}
