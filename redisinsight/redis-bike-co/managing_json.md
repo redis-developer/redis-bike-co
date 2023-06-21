@@ -31,6 +31,10 @@ JSON.SET redisbikeco:store:ch $.staff '{"manager": "Simon", "mechanic": "Savanna
 JSON.MERGE redisbikeco:store:ch $.staff '{"manager": "Justin", "mechanic": null, "cleaner": "Simon"}'
 ```
 
+```redis Retrieve the updated staff object
+JSON.GET redisbikeco:store:ch $.staff
+```
+
 ```redis Append an element to an array
 JSON.ARRAPPEND redisbikeco:store:ch $.amenities '"creche"' 
 ```

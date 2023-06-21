@@ -11,13 +11,13 @@ FT.SEARCH idx:bikes "@material:{aluminium} @weight:[5 10]" RETURN 4 stockcode br
 Which kids bikes cost less than 10,000 Rupees?
 
 ```redis Kids Bikes in Price Range
-FT.SEARCH idx:bikes "@type:{Kids Bikes} @price:[-inf 9999]" return 3 brand model price
+FT.SEARCH idx:bikes "@type:{Kids Bikes} @price:[-inf 9999]" RETURN 3 brand model price
 ```
 
 What different types of bike are there?
 
 ```redis Types of Bike
-127.0.0.1:6379> ft.aggregate idx:bikes "*" groupby 1 @type
+FT.AGGREGATE idx:bikes "*" GROUPBY 1 @type
 ```
 
 Which road bikes are either carbon or full-carbon?
@@ -32,39 +32,30 @@ Which bikes are comfortable, but not made of aluminium or alloy?
 FT.SEARCH idx:bikes "@description:comfortable -@material:{aluminium|alloy}"
 ```
 
-```redis Retrieve the entire document for a bike
-JSON.GET redisbikeco:bike:rbc00001 $
+Add a new field and update the index...
+
+```redis Add New Field
+JSON.MSET redisbikeco:bike:rbc00013 $.thumbsup 2 redisbikeco:bike:rbc00034 $.thumbsup 3 redisbikeco:bike:rbc00099 $.thumbsup 1
 ```
 
-```redis Get specific fields
-JSON.GET redisbikeco:bike:rbc00001 $.stockcode $.specs.material
+```redis Amend Bikes Index
+FT.ALTER idx:bikes schema add $.thumbsup as thumbsup NUMERIC SORTABLE
 ```
 
-```redis Get a field from multiple documents
-JSON.MGET redisbikeco:bike:rbc00001 redisbikeco:bike:rbc00002 $.brand
+Query the new field:
+
+```redis Query thumbs up
+FT.SEARCH idx:bikes "@thumbsup:[0 +inf]" RETURN 3 brand model thumbsup SORTBY thumbsup DESC
 ```
 
-```redis Access elements of a JSON array
-JSON.GET redisbikeco:store:ch $.amenities[0]
-```
-## Updating JSON Documents
+Which stores provide parking and rent bikes to customers?
 
-```redis Update an existing value
-JSON.SET redisbikeco:store:ch $.address.street '"Main Street"' 
+```redis Parking and Rentals
+FT.SEARCH idx:stores "@amenities:{parking} @amenities:{rentals}"
 ```
 
-```redis Add a new sub-object
-JSON.SET redisbikeco:store:ch $.staff '{"manager": "Simon", "mechanic": "Savannah"}'
-```
+Which stores are within 100km of Lucknow?
 
-```redis Patch the staff object with JSON.MERGE
-JSON.MERGE redisbikeco:store:ch $.staff '{"manager": "Justin", "mechanic": null, "cleaner": "Simon"}'
-```
-
-```redis Append an element to an array
-JSON.ARRAPPEND redisbikeco:store:ch $.amenities '"creche"' 
-```
-
-```redis Reduce the price of a bike
-JSON.NUMINCRBY redisbikeco:bike:rbc00001 $.price -100
+```redis Stores near Lucknow
+FT.SEARCH idx:stores "@position:[80.8599399 26.848668 100 km]" RETURN 2 storecode city
 ```
