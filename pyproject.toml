@@ -11,3 +11,13 @@ python = "^3.9"
 redis = "^4.5.5"
 flask = "^2.3.2"
 python-dotenv = "^1.0.0"
+rise = "^5.7.1"
+pandas = "^2.0.2"
+sentence-transformers = "^2.2.2"
+matplotlib = "^3.7.1"
+ipympl = "^0.9.3"
+hide-code = "^0.7.0"
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+

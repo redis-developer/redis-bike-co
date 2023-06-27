@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;400&family=JetBrains+Mono&display=swap');
+
+@import url("https://use.typekit.net/jvv3pir.css");
+
+.reveal h1, .reveal h2 {
+  font-family: clicker, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: #CCD1D1;
+}
+
+.reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+  font-family: 'Fira Sans', sans-serif;
+  color: #CCD1D1;
+  font-weight: 100;
+}
+
+body.notebook_app.rise-enabled {
+	background-color: #101622;
+}
+
+.reveal ul {
+  font-family: 'Fira Sans', sans-serif;
+  color: #CACFD2;
+  font-weight: 100;
+}
+
+.reveal ul strong {
+  font-family: 'Fira Sans', sans-serif;
+  color: #CACFD2;
+  font-weight: 400;
+}
+
+.reveal ul sup {
+  font-family: 'Fira Sans', sans-serif;
+  color: #AAB7B8;
+  font-weight: 100;
+  font-size: xx-small;
+}
+
+div.cell.code_cell.rendered {
+  font-family: 'JetBrains+Mono', monospace;
+}
+
+div.output pre {
+  font-family: 'JetBrains+Mono', monospace;
+  color: white;
+}
+
+/* cover slide sub-title */
+#slide-0-0 > div > div.inner_cell > div.text_cell_render.rendered_html > p {
+  font-family: 'Fira Sans', sans-serif;
+  color: #ab60ed;
+  font-weight: 400;
+  margin: 2.50em 0 0 0;
+}
+
+#Redis-as-a-Vector-Database {
+  margin: 0.25em 0 0 0;
+}
+
+/* backgrounds */
+
+body.rise-enabled:has(div):has(.slide-number):has(a[href^='#/slide-']) {
+  background-image: url('./images/bg4.png') !important;
+}
+
+body.rise-enabled:has(div):has(.slide-number):has(a[href^='#/slide-0']) {
+  background-image: url('./images/bg1.png') !important;
+}
+
+.reveal section img {
+  background: none;
+}
+
+/* stripped tables */
+.striped_table tr:nth-child(odd) {
+  background-color: #AAB7B8 !important;
+  color: #232b3c;
+}
+.striped_table tr:nth-child(even) {
+  background-color: #232b3c;
+  color: #CACFD2;
+}
+
