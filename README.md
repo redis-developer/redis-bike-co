@@ -1,266 +1,203 @@
 # Redis Bike Company Example Application
 
-TODO README!
+This is the code repository that accompanies the [Redis Days India 2023](https://redis.com/redisdays/india/) workshop video.  It contains everything that you need to follow along with the presenters to explore storing and searching JSON documents with [Redis Stack](https://redis.io/docs/about/about-stack/) - including vector similarity search.
+
+The code is written in Python and uses the [redis-py](https://github.com/redis/redis-py) Redis client.  You don't need to be a Python expert to run it and understand the concepts.  Not a Python developer?  Don't worry - these concepts can be applied equally in other programming languages: for example with the [node-redis](https://github.com/redis/node-redis) client for Node.js, [jedis](https://github.com/redis/jedis) for Java or [NRedisStack](https://github.com/redis/NRedisStack) for C#.
+
+# Overview
+
+There are two parts to this workshop and they share a common data model.  Imagine we're operating a chain of bicycle stores located around India.  We want to use Redis to store information about each store, and each type of bike that we sell.
+
+We'll keep the details of each store in its own JSON document, and organize them so that their keys are named `redisbikeco:store:<storecode>`.  For example, our store in Chennai has the store code `CH` so its key will be:
 
 ```
+redisbikeco:store:ch
+```
+
+For each store, we'll maintain a data model that looks like this:
+
+```json
+{ 
+   "storecode": "CH",
+   "storename": "Chennai",
+   "address": {
+      "street": "Arcot Road",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pin": "600026",
+      "country": "India"
+   },
+   "position": "80.2057207,13.0511065",
+   "amenities": [
+      "parking", "rentals", "repairs"
+   ]
+}
+```
+
+Each type of bike that we sell will also have its own JSON document in Redis.  The key for a bike will be `redisbikeco:bike:<stockcode>` where stock code is a unique identifier for the bike - for example `rbc00001`.
+
+Here's what the bike data model looks like:
+
+```json
+{
+   "stockcode": "RBC00001",
+   "model": "Deimos",
+   "brand": "Ergonom",
+   "price": 184950,
+   "type": "Enduro Bikes",
+   "specs": {
+      "material": "alloy",
+      "weight": 14.0
+   },
+   "description": "Redesigned for the 2020 model year, this bike impressed our testers and is the best all-around trail bike we've ever tested. It has a lightweight frame and all-carbon fork, with cables routed internally. It's for the rider who wants both efficiency and capability."
+}
+```
+
+In the first part of the workshop [Simon Prickett](https://twitter.com/simon_prickett) (Principal Developer Advocate at Redis) walks you through how to store, retrieve and update these documents in a Redis Stack instance.  Simon also covers indexing these documents and using the powerful capabilities of Redis Stack Search to query them in ways that you wouldn't think possible using a key/value database.
+
+[Brian Sam-Bodden](https://twitter.com/bsbodden) is a Senior Developer Advocate at Redis.  In the second part of the workshop, Brian explains the concepts behind vector similarity search and shows how to perform searches over the bicycle data set in Redis Stack.
+
+If you want to try out the vector similarity examples, first follow the instructions in "Setting up your Environment" and "Loading the Sample Data" here. Then, check out the separate [README](ipynb/README.md) in the `ipynb` folder of this repository for vector similarity search.
+
+# Setting up your Environment
+
+To run the code locally, you'll need to install and setup a few things:
+
+* Python 3 (if you don't have a recent version of Python, [grab one here](https://www.python.org/downloads/).  We've tested on Python 3.10)
+* Poetry (dependency manager for Python - [read the installation instructions here](https://python-poetry.org/docs/#installation))
+* Docker Desktop ([read the installation instructions here](https://www.docker.com/products/docker-desktop/)) - we use this to provide you with a Redis Stack instance.
+* Git command line tools (the `git` command).  Get these from [the Git website](https://git-scm.com/downloads) if needed.
+* RedisInsight - a graphical tool for viewing and managing data in Redis.  [Download a free copy here](https://redis.com/redis-enterprise/redis-insight/) or get it from the Apple App Store if you're on a Macintosh.
+
+We'll assume that you've downloaded/installed the pre-requisites above, and explain how to configure them as needed in the remainder of this README.
+
+## Cloning this Repository
+
+At the terminal, clone the repository to your local machine:
+
+```bash
+git clone https://github.com/redis-developer/redis-bike-co.git
+```
+
+Then, change directory into the repository folder:
+
+```bash
+cd redis-bike-co
+```
+
+We assume that your terminal's current directory is this folder for all subsquent commands.
+
+## Installing Python Dependencies
+
+TODO
+
+```bash
 poetry install
 ```
 
-Create an environment file:
+## Creating an Environment File
 
-```
+The code uses a `.env` file to store configuration information.  We've provided an example file that you should be able to use without needing to make any changes.
+
+Copy this into place:
+
+```bash
 cp env.example .env
 ```
 
+Note that `.env` files may contain secrets such as Redis passwords, API keys etc.  Don't commit them to source control!
+
+## Starting a Redis Stack Instance
+
+We've provided a Docker Compose file for you to run an instance of Redis Stack locally.  This will run on the default Redis port: 6379.  If you have another instance of Redis running on this port, be sure to shut it down first.
+
+Start Redis Stack like this:
+
+```bash
+docker-compose up -d
 ```
+
+You should see output similar to the following:
+
+```bash
+...
+Starting redis-bike-co ... done
+```
+
+## Configuring RedisInsight
+
+Now it's time to configure RedisInsight to point at your local Redis Stack instance and also load a workbook containing example queries for the workshop.
+
+TODO
+
+# Loading the Sample Data
+
+Let's load the sample bikes and stores data into Redis Stack.  This step also builds the search indices that you'll use to query the data from RedisInsight and the Python sample application.
+
+Run the data loader like this:
+
+```bash
 poetry run python data_loader.py
 ```
 
-INDEX CREATION COMMANDS:
-
-Stores index:
+You should see output similar to the following:
 
 ```
-FT.CREATE idx:stores ON JSON PREFIX 1 redisbikeco:store: SCHEMA $.storecode AS storecode TAG $.storename AS storename TAG $.address.city AS city TAG $.address.state AS state TAG $.address.pin AS pin TAG $.address.country AS country TAG $.position AS position GEO $.amenities AS amenities TAG
+Connecting to Redis.
+Deleting any existing data with redisbikeco prefix.
+Dropping any existing search indices.
+Creating search index for bikes.
+Creating store search index.
+Loading bike data.
+redisbikeco:bike:rbc00001 - Ergonom Deimos
+redisbikeco:bike:rbc00002 - Tots Vanth
+redisbikeco:bike:rbc00003 - Bold bicycles Kirk
+redisbikeco:bike:rbc00004 - Nord Phoebe
+redisbikeco:bike:rbc00005 - BikeShind Telesto
+... many more bikes...
+Loaded 111 bikes into Redis.
+Loading store data.
+redisbikeco:store:ch - Chennai
+redisbikeco:store:ko - Kochi
+redisbikeco:store:be - Bengaluru
+redisbikeco:store:mu - Mumbai
+redisbikeco:store:ka - Kanpur
+Loaded 5 stores into Redis.
+Verifying data...
+Data verification checks completed OK.
 ```
 
-Bikes index:
+Now you have data in your Redis Stack instance, go back to RedisInsight, hit the refresh button and you should see 116 keys appear.  Click on a key to see the JSON document stored at that key.  Here we've chosen `redisbikeco:bike:rbc00086`.
 
-```
-FT.CREATE idx:bikes ON JSON PREFIX 1 redisbikeco:bike: SCHEMA $.stockcode AS stockcode TAG SORTABLE $.model AS model TAG SORTABLE $.brand AS brand TAG SORTABLE $.type as type TAG SORTABLE $.description AS description TEXT $.specs.material AS material TAG SORTABLE $.specs.weight AS weight NUMERIC SORTABLE $.price AS price NUMERIC SORTABLE
-```
+![RedisInsight with example bike JSON data](readme_screenshots/insight_data_check.png)
 
-Which aluminium bikes weigh between 5 and 10kg?:
+# Running the Example Application
 
-```
-127.0.0.1:6379> ft.search idx:bikes "@material:{aluminium} @weight:[5 10]" RETURN 4 stockcode brand model weight LIMIT 0 3 SORTBY weight ASC
-1) (integer) 19
-2) "redisbikeco:bike:rbc00074"
-3) 1) "weight"
-   2) "7.3"
-   3) "stockcode"
-   4) "RBC00074"
-   5) "brand"
-   6) "BikeShind"
-   7) "model"
-   8) "Iapetus"
-4) "redisbikeco:bike:rbc00057"
-5) 1) "weight"
-   2) "7.5"
-   3) "stockcode"
-   4) "RBC00057"
-   5) "brand"
-   6) "nHill"
-   7) "model"
-   8) "Nereid"
-6) "redisbikeco:bike:rbc00009"
-7) 1) "weight"
-   2) "7.9"
-   3) "stockcode"
-   4) "RBC00009"
-   5) "brand"
-   6) "nHill"
-   7) "model"
-   8) "Quaoar"
-```
+This repository also contains a sample application written in Python using the Flask framework.  You don't need to know about Flask to try this out, but if you're interested you can learn more about it from its [documentation here](https://palletsprojects.com/p/flask/).
 
-Which kids bikes cost less than 10,000 Rupees?
+Start the application like this:
 
-```
-127.0.0.1:6379> ft.search idx:bikes "@type:{Kids Bikes} @price:[-inf 9999]" return 3 brand model price
-1) (integer) 3
-2) "redisbikeco:bike:rbc00058"
-3) 1) "brand"
-   2) "Peaknetic"
-   3) "model"
-   4) "Quaoar"
-   5) "price"
-   6) "7764"
-4) "redisbikeco:bike:rbc00093"
-5) 1) "brand"
-   2) "Peaknetic"
-   3) "model"
-   4) "Titan"
-   5) "price"
-   6) "8359"
-6) "redisbikeco:bike:rbc00098"
-7) 1) "brand"
-   2) "Tots"
-   3) "model"
-   4) "Ganymede"
-   5) "price"
-   6) "9439"
-```
-
-What different types of bike are there?
-
-```
-127.0.0.1:6379> ft.aggregate idx:bikes "*" groupby 1 @type
-1) (integer) 7
-2) 1) "type"
-   2) "Enduro Bikes"
-3) 1) "type"
-   2) "Kids Bikes"
-4) 1) "type"
-   2) "Road Bikes"
-5) 1) "type"
-   2) "Mountain Bikes"
-6) 1) "type"
-   2) "Commuter Bikes"
-7) 1) "type"
-   2) "Kids Mountain Bikes"
-8) 1) "type"
-   2) "eBikes"
-```
-
-Which road bikes are either carbon or full-carbon?
-
-```
-127.0.0.1:6379> ft.search idx:bikes "@type:{Road Bikes} @material:{carbon|full\\-carbon}"
- 1) (integer) 7
- 2) "redisbikeco:bike:rbc00008"
- 3) 1) "$"
-    2) "{\"stockcode\":\"RBC00008\",\"model\":\"Polydeuces\",\"brand\":\"7th Generation\",\"price\":52350,\"type\":\"Road Bikes\",\"specs\":{\"material\":\"full-carbon\",\"weight\":11.4},\"description\":\"Sharing features of more expensive bikes, this bike has a compact frame with a sloping top tube, D-Fuse seatpost and carbon fork. That gives great comfort and handling, letting you ride for longer and inspiring confidence. The Shimano gear system effectively does away with an external cassette, so is super low maintenance in terms of wear and tear. It's for the rider who wants both efficiency and capability.\"}"
- 4) "redisbikeco:bike:rbc00050"
- 5) 1) "$"
-    2) "{\"stockcode\":\"RBC00050\",\"model\":\"Titania\",\"brand\":\"Bicyk\",\"price\":226645,\"type\":\"Road Bikes\",\"specs\":{\"material\":\"carbon\",\"weight\":16.2},\"description\":\"The bike has a lightweight form factor, making it easier for seniors to use. At this price point, you get a Shimano 105 hydraulic groupset with a RS510 crank set. The wheels have had a slight upgrade for 2022, so you're now getting DT Swiss R470 rims with the Formula hubs. It comes fully assembled (no convoluted instructions!) and includes a sturdy helmet at no cost.\"}"
- 6) "redisbikeco:bike:rbc00072"
- 7) 1) "$"
-    2) "{\"stockcode\":\"RBC00072\",\"model\":\"Ariel\",\"brand\":\"Velorim\",\"price\":172833,\"type\":\"Road Bikes\",\"specs\":{\"material\":\"carbon\",\"weight\":10.9},\"description\":\"The bike has a lightweight form factor, making it easier for seniors to use. The hydraulic disc brakes provide powerful and modulated braking even in wet conditions, whilst the 3x8 drivetrain offers a huge choice of gears. It's for the rider who wants both efficiency and capability.\"}"
- 8) "redisbikeco:bike:rbc00028"
- 9) 1) "$"
-    2) "{\"stockcode\":\"RBC00028\",\"model\":\"Enterprise\",\"brand\":\"Bold bicycles\",\"price\":227103,\"type\":\"Road Bikes\",\"specs\":{\"material\":\"full-carbon\",\"weight\":13.0},\"description\":\"This is our entry-level road bike for 2023 but it not a basic machine. The Plush saddle softens over time with use. The included Seatpost, however, is easily adjustable and adds to this bike's fantastic rating, as do the hydraulic disc brakes from Tektro. Put it all together and you get a bike that helps redefine what can be done for this price.\"}"
-10) "redisbikeco:bike:rbc00059"
-11) 1) "$"
-    2) "{\"stockcode\":\"RBC00059\",\"model\":\"Vanth\",\"brand\":\"Ergonom\",\"price\":178352,\"type\":\"Road Bikes\",\"specs\":{\"material\":\"carbon\",\"weight\":13.5},\"description\":\"Sharing features of more expensive bikes, this bike has a compact frame with a sloping top tube, D-Fuse seatpost and carbon fork. That gives great comfort and handling, letting you ride for longer and inspiring confidence. The Plush saddle softens over time with use. The included Seatpost, however, is easily adjustable and adds to this bike's fantastic rating, as do the hydraulic disc brakes from Tektro. Put it all together and you get a bike that helps redefine what can be done for this price.\"}"
-12) "redisbikeco:bike:rbc00088"
-13) 1) "$"
-    2) "{\"stockcode\":\"RBC00088\",\"model\":\"Polydeuces\",\"brand\":\"Tots\",\"price\":190856,\"type\":\"Road Bikes\",\"specs\":{\"material\":\"full-carbon\",\"weight\":8.2},\"description\":\"This bike delivers a lot of bike for the money. It has a lightweight frame and all-carbon fork, with cables routed internally. Put it all together and you get a bike that helps redefine what can be done for this price.\"}"
-14) "redisbikeco:bike:rbc00015"
-15) 1) "$"
-    2) "{\"stockcode\":\"RBC00015\",\"model\":\"Hygiea\",\"brand\":\"Bicyk\",\"price\":201355,\"type\":\"Road Bikes\",\"specs\":{\"material\":\"full-carbon\",\"weight\":7.0},\"description\":\"This bike delivers a lot of bike for the money. The hydraulic disc brakes provide powerful and modulated braking even in wet conditions, whilst the 3x8 drivetrain offers a huge choice of gears. That said, we feel this bike is a fantastic option for the rider seeking the versatility that this highly adjustable bike provides.\"}"
-```
-
-Which bikes are comfortable, but not made of aluminium or alloy?
-
-```
-127.0.0.1:6379> ft.search idx:bikes "@description:comfortable -@material:{aluminium|alloy}"
-1) (integer) 2
-2) "redisbikeco:bike:rbc00008"
-3) 1) "$"
-   2) "{\"stockcode\":\"RBC00008\",\"model\":\"Polydeuces\",\"brand\":\"7th Generation\",\"price\":52350,\"type\":\"Road Bikes\",\"specs\":{\"material\":\"full-carbon\",\"weight\":11.4},\"description\":\"Sharing features of more expensive bikes, this bike has a compact frame with a sloping top tube, D-Fuse seatpost and carbon fork. That gives great comfort and handling, letting you ride for longer and inspiring confidence. The Shimano gear system effectively does away with an external cassette, so is super low maintenance in terms of wear and tear. It's for the rider who wants both efficiency and capability.\"}"
-4) "redisbikeco:bike:rbc00059"
-5) 1) "$"
-   2) "{\"stockcode\":\"RBC00059\",\"model\":\"Vanth\",\"brand\":\"Ergonom\",\"price\":178352,\"type\":\"Road Bikes\",\"specs\":{\"material\":\"carbon\",\"weight\":13.5},\"description\":\"Sharing features of more expensive bikes, this bike has a compact frame with a sloping top tube, D-Fuse seatpost and carbon fork. That gives great comfort and handling, letting you ride for longer and inspiring confidence. The Plush saddle softens over time with use. The included Seatpost, however, is easily adjustable and adds to this bike's fantastic rating, as do the hydraulic disc brakes from Tektro. Put it all together and you get a bike that helps redefine what can be done for this price.\"}"
-```
-
-Modifying JSON documents to add a thumbs up count (to several bikes):
-
-```
-127.0.0.1:6379> json.mset redisbikeco:bike:rbc00013 $.thumbsup 2 redisbikeco:bike:rbc00034 $.thumbsup 3 redisbikeco:bike:rbc00099 $.thumbsup 1
-OK
-```
-
-Update the bikes index to add the thumbs up data:
-
-```
-127.0.0.1:6379> ft.alter idx:bikes schema add $.thumbsup as thumbsup numeric sortable
-OK
-```
-
-Query the new field:
-
-```
-127.0.0.1:6379> ft.search idx:bikes "@thumbsup:[0 +inf]" return 3 brand model thumbsup sortby thumbsup desc
-1) (integer) 3
-2) "redisbikeco:bike:rbc00034"
-3) 1) "thumbsup"
-   2) "3"
-   3) "brand"
-   4) "7th Generation"
-   5) "model"
-   6) "Callisto"
-4) "redisbikeco:bike:rbc00013"
-5) 1) "thumbsup"
-   2) "2"
-   3) "brand"
-   4) "Bold bicycles"
-   5) "model"
-   6) "Ariel"
-6) "redisbikeco:bike:rbc00099"
-7) 1) "thumbsup"
-   2) "1"
-   3) "brand"
-   4) "ScramBikes"
-   5) "model"
-   6) "Proteus"
-```
-
-Which stores provide parking and rent bikes to customers?
-
-```
-127.0.0.1:6379> ft.search idx:stores "@amenities:{parking} @amenities:{rentals}"
-
-1) (integer) 2
-2) "redisbikeco:store:ch"
-3) 1) "$"
-   2) "{\"storecode\":\"CH\",\"storename\":\"Chennai\",\"address\":{\"street\":\"Arcot Road\",\"city\":\"Chennai\",\"state\":\"Tamil Nadu\",\"pin\":\"600026\",\"country\":\"India\"},\"position\":\"80.2057207,13.0511065\",\"amenities\":[\"parking\",\"rentals\",\"repairs\"]}"
-4) "redisbikeco:store:ko"
-5) 1) "$"
-   2) "{\"storecode\":\"KO\",\"storename\":\"Kochi\",\"address\":{\"street\":\"Mulamkuzhi Beach Road\",\"city\":\"Kochi\",\"state\":\"Kerala\",\"pin\":\"682002\",\"country\":\"India\"},\"position\":\"76.2415241,9.9436983\",\"amenities\":[\"parking\",\"rentals\",\"repairs\",\"wifi\"]}"
-```
-
-Modify JSON documents to change some store amenities:
-
-```
-127.0.0.1:6379> json.arrappend redisbikeco:store:be $.amenities '"parking"'
-1) (integer) 5
-127.0.0.1:6379> json.arrindex redisbikeco:store:ch $.amenities '"rentals"'
-1) (integer) 1
-127.0.0.1:6379> json.arrpop redisbikeco:store:ch $.amenities 1
-1) "\"rentals\""
-127.0.0.1:6379> json.get redisbikeco:store:ch $.amenities
-"[[\"parking\",\"repairs\"]]"
-```
-
-Query store amenities again to verify that the index was updated automatically:
-
-```
-127.0.0.1:6379> ft.search idx:stores "@amenities:{parking} @amenities:{rentals}" return 1 storename
-1) (integer) 2
-2) "redisbikeco:store:ko"
-3) 1) "storename"
-   2) "Kochi"
-4) "redisbikeco:store:be"
-5) 1) "storename"
-   2) "Bengaluru"
-```
-
-Add further address information for a store:
-
-```
-127.0.0.1:6379> json.merge redisbikeco:store:ko $.address '{"what3words": "yellow train cloud", "number": "12"}'
-OK
-127.0.0.1:6379> json.get redisbikeco:store:ko $
-"[{\"storecode\":\"KO\",\"storename\":\"Kochi\",\"address\":{\"street\":\"Mulamkuzhi Beach Road\",\"city\":\"Kochi\",\"state\":\"Kerala\",\"pin\":\"682002\",\"country\":\"India\",\"what3words\":\"yellow train cloud\",\"number\":\"12\"},\"position\":\"76.2415241,9.9436983\",\"amenities\":[\"parking\",\"rentals\",\"repairs\",\"wifi\"]}]"
-```
-
-Which stores are within 100km of Lucknow?
-
-```
-127.0.0.1:6379> ft.search idx:stores "@position:[80.8599399 26.848668 100 km]" return 2 storecode city
-1) (integer) 1
-2) "redisbikeco:store:ka"
-3) 1) "storecode"
-   2) "KA"
-   3) "city"
-   4) "Kanpur"
-```
-
-Start the application:
-
-```
+```bash
 poetry run flask run
 ```
 
-Then go to `http://localhost:5000`.
+You should see output similar to the following:
+
+```bash
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+```
+
+Use your browser to navigate to `http://localhost:5000`.
+
+![Sample application home page](readme_screenshots/sample_app_home_page.png)
+
+From here, you can click on the links to run the sample queries and see their output in the browser. TODO JSON extension...
+
+![Sample application search query](readme_screenshots/sample_app_search_query.png)
+
+# Need Help or Want to Chat?
+
+If you need help with this workshop, or just want to chat with us about the concepts and how you plan to use them in your own projects then we'd love to see you on the [Redis Discord](https://discord.gg/redis).  There's a `` channel just for this event, and lots of other channels for everything from help with different programming languages to promoting your own projects and finding a job.
