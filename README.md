@@ -194,9 +194,11 @@ Use your browser to navigate to `http://localhost:5000`.
 
 ![Sample application home page](readme_screenshots/sample_app_home_page.png)
 
-From here, you can click on the links to run the sample queries and see their output in the browser. TODO JSON extension...
+From here, you can click on the links to run the sample queries and see their output in the browser. Click on "Find bikes matching multiple criteria":
 
 ![Sample application search query](readme_screenshots/sample_app_search_query.png)
+
+Here, we're using an extension to the Chrome browser that renders JSON nicely.  If you'd like to use that, you can add it to Chrome [here](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh).  Similar extensions are available for other browsers.
 
 # Need Help or Want to Chat?
 
