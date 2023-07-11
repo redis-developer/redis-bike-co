@@ -144,9 +144,27 @@ You're now connected to your (empty) Redis Stack instance.
 
 ![RedisInsight browsing an empty database](readme_screenshots/insight_setup_4.png)
 
+Finally, add the workbook tutorial for this workshop.  Click the "Workbench" icon:
+
+![RedisInsight access the workbench](readme_screenshots/insight_setup_tutorial_1.png)
+
+In the Workbench view, click the "Upload tutorial" button:
+
+![RedisInsight access the workbench](readme_screenshots/insight_setup_tutorial_2.png)
+
+Drag the file `redisinsight/redis-bike-co-insight-tutorial.zip` from your local clone of this repository onto the file target:
+
+![RedisInsight drag and drop tutorial step 1](readme_screenshots/insight_setup_tutorial_3.png)
+
+Then click the "Submit" button:
+
+![RedisInsight drag and drop tutorial step 2](readme_screenshots/insight_setup_tutorial_4.png)
+
+Now you should have a new tutorial called "Redis Days India".  Watch the workshop video to see how to run the sample commands and queries contained in the tutorial.
+
+![RedisInsight tutorial all set up](readme_screenshots/insight_setup_tutorial_5.png)
+
 Leave RedisInsight running and continue to the next step to load some data...
-
-
 
 # Loading the Sample Data
 
