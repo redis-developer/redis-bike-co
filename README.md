@@ -85,14 +85,28 @@ Then, change directory into the repository folder:
 cd redis-bike-co
 ```
 
-We assume that your terminal's current directory is this folder for all subsquent commands.
+We assume that your terminal's current directory is this folder for all subsequent commands.
 
 ## Installing Python Dependencies
 
-TODO
+We're using the Poetry tool to manage Python virtual environments and dependencies.  Install the dependencies that this workshop uses with the following command:
 
 ```bash
 poetry install
+```
+
+This installs the dependencies needed for this part of the workshop, and those for the [vector similarity search](./ipynb/README.md) part.  Expect to see output similar to this:
+
+```bash
+Creating virtualenv redis-bike-co-_T_fhuK9-py3.10 in /Users/simon/Library/Caches/pypoetry/virtualenvs
+Installing dependencies from lock file
+
+Package operations: 134 installs, 0 updates, 0 removals
+
+  • Installing six (1.16.0)
+  • Installing attrs (23.1.0)
+  • Installing platformdirs (3.8.0)
+... similar output...
 ```
 
 ## Creating an Environment File
