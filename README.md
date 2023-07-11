@@ -105,7 +105,7 @@ Copy this into place:
 cp env.example .env
 ```
 
-Note that `.env` files may contain secrets such as Redis passwords, API keys etc.  Don't commit them to source control!
+Note that `.env` files may contain secrets such as Redis passwords, API keys etc.  Add them to your `.gitignore` file and don't commit them to source control!  We've done that for you in this repository.
 
 ## Starting a Redis Stack Instance
 
@@ -128,7 +128,25 @@ Starting redis-bike-co ... done
 
 Now it's time to configure RedisInsight to point at your local Redis Stack instance and also load a workbook containing example queries for the workshop.
 
-TODO
+Start RedisInsight and you'll see the welcome screen:
+
+![RedisInsight Welcome screen](readme_screenshots/insight_setup_1.png)
+
+Click the "ADD REDIS DATABASE" button, then check that the value for "Host" is "127.0.0.1" and that the value for "Port" is 6379.  These should be the defaults, you shouldn't need to change them.  Finally set the value of "Database Alias" to be "Redis Days India Workshop" and click the "Add Redis Database" button:
+
+![RedisInsight database configuration](readme_screenshots/insight_setup_2.png)
+
+You should see one connection in your list of Redis databases.  Click on "Redis Days India Workshop":
+
+![RedisInsight database connnections](readme_screenshots/insight_setup_3.png)
+
+You're now connected to your (empty) Redis Stack instance.  
+
+![RedisInsight browsing an empty database](readme_screenshots/insight_setup_4.png)
+
+Leave RedisInsight running and continue to the next step to load some data...
+
+
 
 # Loading the Sample Data
 
