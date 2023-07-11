@@ -252,4 +252,4 @@ Here, we're using an extension to the Chrome browser that renders JSON nicely.  
 
 # Need Help or Want to Chat?
 
-If you need help with this workshop, or just want to chat with us about the concepts and how you plan to use them in your own projects then we'd love to see you on the [Redis Discord](https://discord.gg/redis).  There's a `` channel just for this event, and lots of other channels for everything from help with different programming languages to promoting your own projects and finding a job.
+If you need help with this workshop, or just want to chat with us about the concepts and how you plan to use them in your own projects then we'd love to see you on the [Redis Discord](https://discord.gg/redis).  There's a `redis-days-india-workshop` channel just for this event, and lots of other channels for everything from help with different programming languages to promoting your own projects and finding a job.
