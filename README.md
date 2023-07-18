@@ -1,6 +1,6 @@
 # Redis Bike Company Example Application
 
-This is the code repository that accompanies the [Redis Days India 2023](https://redis.com/redisdays/india/) workshop video.  It contains everything that you need to follow along with the presenters to explore storing and searching JSON documents with [Redis Stack](https://redis.io/docs/about/about-stack/) - including vector similarity search.
+This is the code repository that accompanies the [Redis Days India 2023](https://redis.com/redisdays/india/) workshop video ([watch it here on YouTube](https://www.youtube.com/watch?v=e4A_k-hFIa4)).  It contains everything that you need to follow along with the presenters to explore storing and searching JSON documents with [Redis Stack](https://redis.io/docs/about/about-stack/) - including vector similarity search.
 
 The code is written in Python and uses the [redis-py](https://github.com/redis/redis-py) Redis client.  You don't need to be a Python expert to run it and understand the concepts.  Not a Python developer?  Don't worry - these concepts can be applied equally in other programming languages: for example with the [node-redis](https://github.com/redis/node-redis) client for Node.js, [jedis](https://github.com/redis/jedis) for Java or [NRedisStack](https://github.com/redis/NRedisStack) for C#.
 
